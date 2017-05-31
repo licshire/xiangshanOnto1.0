@@ -1,0 +1,362 @@
+@font-face
+{
+	font-family:myFont;
+	src:url('../font/YaHeiLight/YaHeiLight.ttf'),
+		url('../font/YaHeiLight/YaHeiLight.svg'),
+		url('../font/YaHeiLight/YaHeiLight.eot'),
+		url('../font/YaHeiLight/YaHeiLight.woff');
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */  
+    color:black;  
+}
+
+.D3Button{
+	cursor:pointer;
+	position:absolute;
+	left:250px;
+	top:5px;
+	font-family:myFont;
+ 	padding:3px 5px; 
+	border-width:0px;
+	border-radius:30px;
+	outline:none;
+	background:black;
+	color:white;
+	opacity:0.8;
+}
+
+.D3Button:hover{
+	background:#FF7F00;
+	opacity:1;
+}
+
+body{
+	margin:0px;
+	padding:0px;
+	background:url(../img/background1366.jpg);
+	background-repeat:no-repeat;
+	background-size:auto auto;
+}
+
+#main{
+	position:relative;
+	height:600px;
+	width:1300px;
+}
+
+#header{
+	position:relative;
+	width:1366px;
+	height:60px;
+	top:0px;
+	left:0px;
+	margin:0px;
+	padding:0px;
+	background-color: black;
+}
+
+#letsstart a:link,a:visited{
+	text-decoration:none;
+	font-family:myFont;
+	font-size:25px;
+	color:white;
+	margin:0px;
+	padding:12px 22px 12px 22px;
+	border-radius:30px;
+}
+
+#letsstart a:hover{
+	text-decoration:none;
+	color:white;
+	background-color:#FF7F00;
+	margin:0px;
+	padding:12px 22px 12px 22px;
+	border-radius:30px;
+}
+
+#header #smalllogo{
+	float:left;
+	position:relative;
+	width:129.7px;
+	height:60px;
+	top:0px;
+	left:120px;
+	margin:0px;
+	padding:0px;
+}
+
+#header #nav{
+	position:relative;
+	width:750px;
+	height:80px;
+	top:19px;
+	left:600px;
+}
+
+#header #nav ul li{
+	float:left;
+	list-style:none;
+	padding:0px 30px;
+	text-align:center;
+}
+
+#header #nav ul li a:link,a:visited{
+	text-decoration:none;
+	font-family:myFont;
+	color:white;
+}
+
+#header #nav ul li a:hover{
+	text-decoration:none;
+	color:#FF7F00;
+}
+
+.cls{
+clear:both;
+}
+
+.curBg {
+	background:#FF7F00;
+	height:3px;
+	position:absolute;
+	bottom:0;
+	width:124px;
+	top:38px;
+	left:345.688px;
+}
+
+#SearchBox{
+	position:relative;
+	top:10px;
+	left:281px;
+	width:800px;
+	height:80px;
+}
+
+#doSearch{
+	display:inline-block;
+	position:relative;
+	top:10px;
+	left:10px;
+	width:435px;
+	height:35px;
+	background-color:#C1C1C1;
+	filter:alpha(opacity=50);  
+    -moz-opacity:0.5;  
+    -khtml-opacity: 0.5;  
+    opacity: 0.5; 
+	border-width:0px;
+	border-radius:20px;
+}
+
+#SearchContent{
+	float:left;
+	position:relative;
+	top:5px;
+	left:10px;
+	background:transparent;
+	border:none;
+	width:380px;
+	height:25px;
+	outline:none;
+	font-family:myFont;
+	font-size:15px;
+} 
+
+#Searchimage{
+	position:relative;
+	top:5px;
+	left:-40px;
+	height:25px;
+	weight:25px;
+	outline:none;
+}
+
+#Searchimage:hover{
+	opacity:0.5;
+}
+
+#myRadio{
+	position:relative;
+	top:0px;
+	left:20px;
+	font-family:myFont;
+	font-size:17px;
+	color:white;
+}
+
+select{
+	cursor:pointer;
+	padding:6px 6px;
+	font-family:myFont;
+	font-size:15.5px;
+	overflow:hidden;
+	background-color:rgba(202,176,176,0.5);
+	outline:none;
+	border-width:0px;
+	border-radius:10px;
+	
+}
+
+option{
+	border-radius:10px;
+}
+
+#SearchResult{
+	position:relative;
+	top:0px;
+	left:160px;
+	width:350px;
+	height:250px;
+	border-width:0px;
+	border-radius:30px;
+	background-color:rgba(255,255,255,0.5);
+}
+
+#ResultTitle{
+	position:relative;
+	width:350px;
+	height:50px;
+	border-width:0px;
+	border-top-left-radius:30px;
+	border-top-right-radius:30px;
+	background-color:rgba(255,255,255,0.8);
+}
+
+#ResultTitleContent{
+	position:relative;
+	top:13.5px;
+	left:35px;
+	font-family:myFont;
+	font-size:18px;
+}
+
+#ResultContent{
+	position:relative;
+	width:350px;
+	height:200px;
+	border-width:0px;
+	border-bottom-left-radius:30px;
+	border-bottom-right-radius:30px;
+	font-family:myFont;
+	overflow:auto;
+}
+
+#SearchHistory{
+	position:relative;
+	top:10px;
+	left:160px;
+	width:350px;
+	height:230px;
+	border-width:0px;
+	border-radius:30px;
+	background-color:rgba(255,255,255,0.5);
+}
+
+#HistoryTitle{
+	position:relative;
+	width:350px;
+	height:45px;
+	border-width:0px;
+	border-top-left-radius:30px;
+	border-top-right-radius:30px;
+	background-color:rgba(255,255,255,0.8);
+}
+
+#HistoryTitleContent{
+	position:relative;
+	top:10px;
+	left:35px;
+	font-family:myFont;
+	font-size:18px;
+}
+
+#ClearHistory{
+	cursor:pointer;
+	position:relative;
+	top:9.5px;
+	left:188px;
+	padding-left:12px;
+	padding-right:12px;
+	border-radius:30px;
+	border-width:0px;
+	background-color:rgba(255,255,255,1);
+	font-family:myFont;
+	font-size:16px;
+	outline:none;
+}
+
+#ClearHistory:hover{
+	background:#3D4A39;
+	opacity:0.8;
+	color:white;
+}
+
+#HistoryContent{
+	position:relative;
+	width:350px;
+	height:183px;
+	border-width:0px;
+	border-bottom-left-radius:30px;
+	border-bottom-right-radius:30px;
+	font-family:myFont;
+	overflow:auto;
+}
+
+#D3{
+	float:right;
+	position:relative;
+	top:0px;
+	left:-120px;
+	height:490px;
+	width:645px;
+	border-radius:30px;
+	background-color:rgba(255,255,255,0.5);
+}
+
+#D3Title{
+	position:relative;
+	top:0px;
+	left:0px;
+	height:50px;
+	width:645px;
+	border-top-left-radius:30px;
+	border-top-right-radius:30px;
+	background-color:rgba(255,255,255,0.8);
+	border-style:solid;
+	border-width:0px;
+}
+
+#D3TitleContent{
+	position:relative;
+	top:13px;
+	left:35px;
+	font-family:myFont;
+	font-size:18px;
+}
+
+#D3Content{
+	position:relative;
+	width:645px;
+	height:440px;
+	border-width:0px;
+	border-bottom-left-radius:30px;
+	border-bottom-right-radius:30px;
+	font-family:myFont;
+	overflow:hidden;
+}
+
+#Footer{
+	position:absolute;
+	top:583px;
+	left:275px;
+	width:800px;
+	height:30px;
+	font-size:10px;
+	margin:0px;
+	padding:0px;
+	text-align:center;
+	font-family:myFont;
+	font-size:16px;
+}

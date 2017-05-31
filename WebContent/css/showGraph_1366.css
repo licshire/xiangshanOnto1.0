@@ -1,0 +1,259 @@
+@font-face
+{
+	font-family:myFont;
+	src:url('../font/YaHeiLight/YaHeiLight.ttf'),
+		url('../font/YaHeiLight/YaHeiLight.svg'),
+		url('../font/YaHeiLight/YaHeiLight.eot'),
+		url('../font/YaHeiLight/YaHeiLight.woff');
+}
+
+.D3Button{
+	cursor:pointer;
+	position:absolute;
+	left:250px;
+	top:5px;
+	font-family:myFont;
+ 	padding:3px 5px; 
+	border-width:0px;
+	border-radius:30px;
+	outline:none;
+	background:black;
+	color:white;
+	opacity:0.8;
+}
+
+.D3Button:hover{
+	background:#FF7F00;
+	opacity:1;
+}
+
+body{
+	margin:0px;
+	padding:0px;
+	background:url(../img/background1366.jpg);
+	background-repeat:no-repeat;
+	background-size:auto auto;
+}
+
+#header{
+	position:relative;
+	width:1366px;
+	height:60px;
+	top:0px;
+	left:0px;
+	margin:0px;
+	padding:0px;
+	background-color: black;
+}
+
+#letsstart a:link,a:visited{
+	text-decoration:none;
+	font-family:myFont;
+	font-size:25px;
+	color:white;
+	margin:0px;
+	padding:12px 22px 12px 22px;
+	border-radius:30px;
+}
+
+#letsstart a:hover{
+	text-decoration:none;
+	color:white;
+	background-color:#FF7F00;
+	margin:0px;
+	padding:12px 22px 12px 22px;
+	border-radius:30px;
+}
+
+#header #smalllogo{
+	float:left;
+	position:relative;
+	width:129.7px;
+	height:60px;
+	top:0px;
+	left:120px;
+	margin:0px;
+	padding:0px;
+}
+
+#header #nav{
+	position:relative;
+	width:750px;
+	height:80px;
+	top:19px;
+	left:600px;
+}
+
+#header #nav ul li{
+	float:left;
+	list-style:none;
+	padding:0px 30px;
+	text-align:center;
+}
+
+#header #nav ul li a:link,a:visited{
+	text-decoration:none;
+	font-family:myFont;
+	color:white;
+}
+
+#header #nav ul li a:hover{
+	text-decoration:none;
+	color:#FF7F00;
+}
+
+.cls{
+	clear:both;
+}
+
+.curBg {
+	background:#FF7F00;
+	height:3px;
+	position:absolute;
+	bottom:0;
+	width:124px;
+	top:38px;
+	left:221.688px;
+}
+
+#main{
+	position:relative;
+	height:600px;
+	width:1300px;
+}
+
+#Tree{
+	position:relative;
+	top:35px;
+	left:100px;
+	float:left;
+	height:540px;
+	width:220px;
+	background-color:rgba(255,255,255,0.3);
+	border-radius:30px;
+}
+
+#TreeTitle{
+	position:relative;
+	width:220px;
+	height:50px;
+	border-width:0px;
+	border-top-left-radius:30px;
+	border-top-right-radius:30px;
+	background-color:rgba(255,255,255,0.8);
+}
+
+#TreeTitleContent{
+	position:relative;
+	top:13px;
+	left:35px;
+	font-family:myFont;
+	font-size:18px;
+}
+
+#TreeContent{
+	position:relative;
+	width:220px;
+	height:490px;
+	border-width:0px;
+	border-bottom-left-radius:30px;
+	border-bottom-right-radius:30px;
+	font-family:myFont;
+	overflow:auto;
+}
+
+#Instance{
+	position:relative;
+	top:35px;
+	left:110px;
+	float:left;
+	height:540px;
+	width:250px;
+	background-color:rgba(255,255,255,0.3);
+	border-radius:30px;
+	font-family:myFont;
+}
+
+#InstanceTitle{
+	position:relative;
+	width:250px;
+	height:50px;
+	border-width:0px;
+	border-top-left-radius:30px;
+	border-top-right-radius:30px;
+	background-color:rgba(255,255,255,0.8);
+}
+
+#InstanceTitleContent{
+	position:relative;
+	top:13px;
+	left:36px;
+	font-family:myFont;
+	font-size:18px;
+}
+
+#InstanceContent{
+	position:relative;
+	width:250px;
+	height:490px;
+	border-width:0px;
+	border-bottom-left-radius:30px;
+	border-bottom-right-radius:30px;
+	font-family:myFont;
+	overflow:auto;
+}
+
+#D3{
+	float:left;
+	position:relative;
+	top:35px;
+	left:120px;
+	height:540px;
+	width:700px;
+	background-color:rgba(255,255,255,0.3);
+	border-radius:30px;
+	font-family:myFont;
+}
+
+#D3title{
+	position:relative;
+	width:700px;
+	height:50px;
+	border-width:0px;
+	border-top-left-radius:30px;
+	border-top-right-radius:30px;
+	background-color:rgba(255,255,255,0.8);
+}
+
+#D3titleContent{
+	position:relative;
+	top:13px;
+	left:36px;
+	font-family:myFont;
+	font-size:18px;
+}
+
+#D3Content{
+	position:relative;
+	width:700px;
+	height:490px;
+	border-width:0px;
+	border-bottom-left-radius:30px;
+	border-bottom-right-radius:30px;
+	font-family:myFont;
+	overflow:hidden;
+}
+
+#Footer{
+	position:absolute;
+	top:583px;
+	left:275px;
+	width:800px;
+	height:30px;
+	font-size:10px;
+	margin:0px;
+	padding:0px;
+	text-align:center;
+	font-family:myFont;
+	font-size:16px;
+}

@@ -1,0 +1,37 @@
+@prefix f: <http://www.owl-ontologies.com/XiangshanOnto.owl#>.@include <RDFS>.@include <OWL>.
+@prefix 人物: <http://www.owl-ontologies.com/Individual.owl#>.@include <RDFS>.@include <OWL>.
+@prefix 组织: <http://www.owl-ontologies.com/Organization.owl#>.@include <RDFS>.@include <OWL>.
+
+#人物关系篇
+#规则以individualRule开头
+[individualRule1: (?a 人物:女儿是 ?b)->(?b 人物:父亲是 ?a)]
+[individualRule2: (?a 人物:父亲是 ?b),(?a 人物:性别 '女')->(?b 人物:女儿是 ?a)]
+[individualRule3: (?a 人物:父亲是 ?b),(?a 人物:性别 '男')->(?b 人物:儿子是 ?a)]
+[individualRule4: (?a 人物:父亲是 ?c),(?b f:父亲是 ?c),(?a 人物:性别 '男'),(?b 人物:性别 '男')->(?a 人物:兄弟关系 ?b)]
+[individualRule5: (?a 人物:父亲是 ?b),(?a 人物:性别 '男')->(?b 人物:儿子是 ?a)]
+
+#时间关系篇
+#规则以timeRule开头
+
+
+#事件关系篇
+#规则以eventRule开头
+
+#地点关系篇
+#规则以locationRule开头
+
+#思想精神文化关系篇
+#规则以thinkRule开头
+
+#文化遗存关系篇
+#规则以relicsRule开头
+
+#组织机构关系篇
+#规则以organizationRule开头
+[organizationRule1: (?a 组织:领导人 ?b)->(?b 组织:领导 ?a)]
+
+
+
+
+
+

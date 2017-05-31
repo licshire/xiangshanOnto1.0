@@ -1,0 +1,137 @@
+@font-face
+{
+	font-family:myFont;
+	src:url('../font/YaHeiLight/YaHeiLight.ttf'),
+		url('../font/YaHeiLight/YaHeiLight.svg'),
+		url('../font/YaHeiLight/YaHeiLight.eot'),
+		url('../font/YaHeiLight/YaHeiLight.woff');
+}
+
+body{
+	margin:0px;
+	padding:0px;
+	background:url(../img/background1366.jpg);
+	background-repeat:no-repeat;
+	background-size:auto auto;
+}
+
+#header{
+	position:relative;
+	width:1366px;
+	height:60px;
+	top:0px;
+	left:0px;
+	margin:0px;
+	padding:0px;
+	background-color: black;
+}
+
+#biglogo{
+	position:relative;
+	width:304px;
+	height:350px;
+	top:50px;
+	left:570px;
+	margin:0px;
+	padding:0px;
+}
+
+#letsstart{
+	position:relative;
+	width:200px;
+	height:76.3px;
+	top:90px;
+	left:616px;
+	margin:0px;
+	padding:0px;
+}
+
+#letsstart a:link,a:visited{
+	text-decoration:none;
+	font-family:myFont;
+	font-size:25px;
+	color:white;
+	margin:0px;
+	padding:12px 22px 12px 22px;
+	border-radius:30px;
+	border-style:solid;
+	border-color:white;
+	border-width:1px;
+}
+
+#letsstart a:hover{
+	text-decoration:none;
+	color:white;
+	background-color:#FF7F00;
+	margin:0px;
+	padding:12px 22px 12px 22px;
+	border-radius:30px;
+	border-style:solid;
+	border-color:rgba(255,255,255,0);
+	border-width:1px;
+}
+
+#header #smalllogo{
+	float:left;
+	position:relative;
+	width:129.7px;
+	height:60px;
+	top:0px;
+	left:120px;
+	margin:0px;
+	padding:0px;
+}
+
+#header #nav{
+	position:relative;
+	width:750px;
+	height:80px;
+	top:19px;
+	left:600px;
+}
+
+#header #nav ul li{
+	float:left;
+	list-style:none;
+	padding:0px 30px;
+	text-align:center;
+}
+
+#header #nav ul li a:link,a:visited{
+	text-decoration:none;
+	font-family:myFont;
+	color:white;
+}
+
+#header #nav ul li a:hover{
+	text-decoration:none;
+	color:#FF7F00;
+}
+
+.cls{
+clear:both;
+}
+
+.curBg {
+	background:#FF7F00;
+	height:3px;
+	position:absolute;
+	bottom:0;
+	width:92px;
+	top:38px;
+	left:130px;
+}
+
+#Footer{
+	position:absolute;
+	top:583px;
+	left:275px;
+	width:800px;
+	height:30px;
+	font-size:10px;
+	margin:0px;
+	padding:0px;
+	text-align:center;
+	font-family:myFont;
+	font-size:16px;
+}

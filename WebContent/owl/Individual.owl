@@ -1,0 +1,3167 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:人物="http://www.owl-ontologies.com/Individual.owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:sqwrl="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+    xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+    xmlns:时间="http://www.owl-ontologies.com/Time.owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+  xml:base="http://www.owl-ontologies.com/Individual.owl">
+  <owl:Ontology rdf:about="">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >香山人物</rdfs:comment>
+    <owl:imports rdf:resource="http://www.owl-ontologies.com/Time.owl"/>
+    <owl:imports rdf:resource="http://www.owl-ontologies.com/Location.owl"/>
+    <owl:imports rdf:resource="http://www.owl-ontologies.com/Duty_Title.owl"/>
+  </owl:Ontology>
+  <rdfs:Class rdf:about="http://www.owl-ontologies.com/Duty_Title.owl#职业"/>
+  <rdfs:Class rdf:about="http://www.owl-ontologies.com/Duty_Title.owl#称号"/>
+  <rdfs:Class rdf:about="http://www.owl-ontologies.com/Time.owl#时间"/>
+  <rdfs:Class rdf:about="http://www.owl-ontologies.com/Location.owl#地点"/>
+  <owl:Class rdf:ID="莫氏家族">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="买办家族"/>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >莫氏家族</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="乡贤俊彦">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="香山名人"/>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >乡贤俊彦</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="英烈志士">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#香山名人"/>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >英烈志士</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="思想先驱">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >思想先驱</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#香山名人"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="郑氏家族">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >郑氏家族</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#买办家族"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="香山居民">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >香山居民</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="香山人物"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="从商人士">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#香山名人"/>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >从商人士</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="留学人士">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >留学人士</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#香山名人"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="华侨华人">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >华侨华人</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#香山名人"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#香山人物">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >香山人物</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="#买办家族">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#香山名人"/>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >买办家族</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="航空翘楚">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >航空翘楚</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#香山名人"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="世纪伟人">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#香山名人"/>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >世纪伟人</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="唐氏家族">
+    <rdfs:subClassOf rdf:resource="#买办家族"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >唐氏家族</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="文化名家">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#香山名人"/>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >文化名家</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="军政要人">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >军政要人</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#香山名人"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="其他相关人物">
+    <rdfs:subClassOf rdf:resource="#香山人物"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >其他相关人物</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="徐氏家族">
+    <rdfs:subClassOf rdf:resource="#买办家族"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >徐氏家族</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="#香山名人">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >香山名人</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#香山人物"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:ID="朋友关系">
+    <rdfs:range rdf:resource="#香山人物"/>
+    <owl:inverseOf rdf:resource="#朋友关系"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <rdfs:domain rdf:resource="#香山人物"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="父亲是">
+    <rdfs:range rdf:resource="#香山人物"/>
+    <rdfs:domain rdf:resource="#香山人物"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="族兄是">
+    <rdfs:domain rdf:resource="#香山人物"/>
+    <rdfs:range rdf:resource="#香山人物"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="堂兄弟关系">
+    <rdfs:range rdf:resource="#香山人物"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <rdfs:domain rdf:resource="#香山人物"/>
+    <owl:inverseOf rdf:resource="#堂兄弟关系"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="姐姐是">
+    <rdfs:range rdf:resource="#香山人物"/>
+    <rdfs:domain rdf:resource="#香山人物"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="大舅子是">
+    <rdfs:range rdf:resource="#香山人物"/>
+    <rdfs:domain rdf:resource="#香山人物"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="妻子是">
+    <rdfs:range rdf:resource="#香山人物"/>
+    <rdfs:domain rdf:resource="#香山人物"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="女儿是">
+    <rdfs:domain rdf:resource="#香山人物"/>
+    <rdfs:range rdf:resource="#香山人物"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="弟弟是">
+    <rdfs:domain rdf:resource="#香山人物"/>
+    <rdfs:range rdf:resource="#香山人物"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="妹夫是">
+    <rdfs:domain rdf:resource="#香山人物"/>
+    <rdfs:range rdf:resource="#香山人物"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="女婿是">
+    <rdfs:domain rdf:resource="#香山人物"/>
+    <rdfs:range rdf:resource="#香山人物"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="姐夫是">
+    <rdfs:domain rdf:resource="#香山人物"/>
+    <rdfs:range rdf:resource="#香山人物"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="老师是">
+    <rdfs:range rdf:resource="#香山人物"/>
+    <rdfs:domain rdf:resource="#香山人物"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="儿子是">
+    <rdfs:domain rdf:resource="#香山人物"/>
+    <rdfs:range rdf:resource="#香山人物"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="死亡年份">
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/Time.owl#时间"/>
+    <rdfs:domain rdf:resource="#香山人物"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="岳母是">
+    <rdfs:range rdf:resource="#香山人物"/>
+    <rdfs:domain rdf:resource="#香山人物"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="孙子是">
+    <rdfs:range rdf:resource="#香山人物"/>
+    <rdfs:domain rdf:resource="#香山人物"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="哥哥是">
+    <rdfs:domain rdf:resource="#香山人物"/>
+    <rdfs:range rdf:resource="#香山人物"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="职业">
+    <rdfs:domain rdf:resource="#香山人物"/>
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/Duty_Title.owl#职业"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="妹妹是">
+    <rdfs:domain rdf:resource="#香山人物"/>
+    <rdfs:range rdf:resource="#香山人物"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="丈夫是">
+    <rdfs:range rdf:resource="#香山人物"/>
+    <rdfs:domain rdf:resource="#香山人物"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="孙女是">
+    <rdfs:domain rdf:resource="#香山人物"/>
+    <rdfs:range rdf:resource="#香山人物"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="后代">
+    <rdfs:domain rdf:resource="#香山人物"/>
+    <rdfs:range rdf:resource="#香山人物"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="族弟是">
+    <rdfs:domain rdf:resource="#香山人物"/>
+    <rdfs:range rdf:resource="#香山人物"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="学生是">
+    <rdfs:domain rdf:resource="#香山人物"/>
+    <rdfs:range rdf:resource="#香山人物"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="侄孙是">
+    <rdfs:range rdf:resource="#香山人物"/>
+    <rdfs:domain rdf:resource="#香山人物"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="出生地">
+    <rdfs:domain rdf:resource="#香山人物"/>
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/Location.owl#地点"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="上司是">
+    <rdfs:domain rdf:resource="#香山人物"/>
+    <rdfs:range rdf:resource="#香山人物"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="出生年份">
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/Time.owl#时间"/>
+    <rdfs:domain rdf:resource="#香山人物"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="称号">
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/Duty_Title.owl#称号"/>
+    <rdfs:domain rdf:resource="#香山人物"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="叔奶爷是">
+    <rdfs:range rdf:resource="#香山人物"/>
+    <rdfs:domain rdf:resource="#香山人物"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="侄子是">
+    <rdfs:domain rdf:resource="#香山人物"/>
+    <rdfs:range rdf:resource="#香山人物"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="岳父是">
+    <rdfs:range rdf:resource="#香山人物"/>
+    <rdfs:domain rdf:resource="#香山人物"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="叔叔是">
+    <rdfs:range rdf:resource="#香山人物"/>
+    <rdfs:domain rdf:resource="#香山人物"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="伯伯是">
+    <rdfs:domain rdf:resource="#香山人物"/>
+    <rdfs:range rdf:resource="#香山人物"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="母亲是">
+    <rdfs:range rdf:resource="#香山人物"/>
+    <rdfs:domain rdf:resource="#香山人物"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="部下是">
+    <rdfs:range rdf:resource="#香山人物"/>
+    <rdfs:domain rdf:resource="#香山人物"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="祖父是">
+    <rdfs:range rdf:resource="#香山人物"/>
+    <rdfs:domain rdf:resource="#香山人物"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:ID="别名">
+    <rdfs:domain rdf:resource="#香山人物"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="笔名">
+    <rdfs:domain rdf:resource="#香山人物"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="号">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#香山人物"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="外文名">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#香山人物"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="性别">
+    <rdfs:domain rdf:resource="#香山人物"/>
+    <rdfs:range>
+      <owl:DataRange>
+        <owl:oneOf rdf:parseType="Resource">
+          <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+          >男</rdf:first>
+          <rdf:rest rdf:parseType="Resource">
+            <rdf:rest rdf:parseType="Resource">
+              <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+              >未知</rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:rest>
+            <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >女</rdf:first>
+          </rdf:rest>
+        </owl:oneOf>
+      </owl:DataRange>
+    </rdfs:range>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="国籍">
+    <rdfs:domain rdf:resource="#香山人物"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="忌日">
+    <rdfs:domain rdf:resource="#香山人物"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="字">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#香山人物"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="族名">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#香山人物"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="民族">
+    <rdfs:domain rdf:resource="#香山人物"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="宗教信仰">
+    <rdfs:range>
+      <owl:DataRange>
+        <owl:oneOf rdf:parseType="Resource">
+          <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+          >拜上帝教</rdf:first>
+          <rdf:rest rdf:parseType="Resource">
+            <rdf:rest rdf:parseType="Resource">
+              <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+              >基督教</rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:rest>
+            <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >无神论</rdf:first>
+          </rdf:rest>
+        </owl:oneOf>
+      </owl:DataRange>
+    </rdfs:range>
+    <rdfs:domain rdf:resource="#香山人物"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="生日">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <rdfs:domain rdf:resource="#香山人物"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="化名">
+    <rdfs:domain rdf:resource="#香山人物"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:SymmetricProperty rdf:ID="合作伙伴">
+    <rdfs:range rdf:resource="#香山人物"/>
+    <rdfs:domain rdf:resource="#香山人物"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <owl:inverseOf rdf:resource="#合作伙伴"/>
+  </owl:SymmetricProperty>
+  <owl:SymmetricProperty rdf:ID="同乡关系">
+    <owl:inverseOf rdf:resource="#同乡关系"/>
+    <rdfs:range rdf:resource="#香山人物"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="#香山人物"/>
+  </owl:SymmetricProperty>
+  <owl:SymmetricProperty rdf:ID="同事关系">
+    <rdfs:range rdf:resource="#香山人物"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="#香山人物"/>
+    <owl:inverseOf rdf:resource="#同事关系"/>
+  </owl:SymmetricProperty>
+  <人物:军政要人 rdf:ID="黄标"/>
+  <人物:乡贤俊彦 rdf:ID="唐有恒"/>
+  <人物:留学人士 rdf:ID="黄有章"/>
+  <人物:郑氏家族 rdf:ID="郑文瑞">
+    <人物:儿子是>
+      <人物:郑氏家族 rdf:ID="郑观应">
+        <人物:同乡关系>
+          <人物:从商人士 rdf:ID="杨桂轩">
+            <人物:同乡关系 rdf:resource="#郑观应"/>
+            <人物:同乡关系>
+              <人物:唐氏家族 rdf:ID="唐廷枢">
+                <人物:族弟是>
+                  <人物:唐氏家族 rdf:ID="唐国泰">
+                    <人物:化名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                    >翘卿</人物:化名>
+                    <人物:族兄是 rdf:resource="#唐廷枢"/>
+                    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                    >唐廷枢族弟</rdfs:comment>
+                    <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                    >男</人物:性别>
+                  </人物:唐氏家族>
+                </人物:族弟是>
+                <人物:号 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >镜心</人物:号>
+                <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1892"/>
+                <人物:朋友关系 rdf:resource="#郑观应"/>
+                <人物:生日 rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+                >1832-05-19</人物:生日>
+                <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >男</人物:性别>
+                <人物:侄子是>
+                  <人物:唐氏家族 rdf:ID="唐杰臣">
+                    <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                    >男</人物:性别>
+                    <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1904"/>
+                    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                    >唐廷枢侄子</rdfs:comment>
+                    <人物:字 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                    >荣俊</人物:字>
+                    <人物:号 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                    ></人物:号>
+                    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1862"/>
+                    <人物:字 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                    ></人物:字>
+                    <人物:伯伯是 rdf:resource="#唐廷枢"/>
+                    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#唐家湾村"/>
+                    <人物:父亲是>
+                      <人物:唐氏家族 rdf:ID="唐廷植">
+                        <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1897"/>
+                        <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+                        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >唐廷枢胞兄</rdfs:comment>
+                        <人物:儿子是 rdf:resource="#唐杰臣"/>
+                        <人物:化名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >唐国华</人物:化名>
+                        <人物:同事关系>
+                          <人物:留学人士 rdf:ID="容闳">
+                            <人物:朋友关系>
+                              <人物:其他相关人物 rdf:ID="梁启超">
+                                <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                >男</人物:性别>
+                                <人物:朋友关系 rdf:resource="#容闳"/>
+                              </人物:其他相关人物>
+                            </人物:朋友关系>
+                            <人物:号 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                            ></人物:号>
+                            <人物:老师是>
+                              <人物:其他相关人物 rdf:ID="Mrs.Gutzlaff">
+                                <人物:学生是 rdf:resource="#容闳"/>
+                                <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                >男</人物:性别>
+                              </人物:其他相关人物>
+                            </人物:老师是>
+                            <人物:忌日 rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+                            >1912-04-21</人物:忌日>
+                            <人物:合作伙伴>
+                              <人物:其他相关人物 rdf:ID="李文耀">
+                                <人物:合作伙伴 rdf:resource="#容闳"/>
+                                <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                >男</人物:性别>
+                              </人物:其他相关人物>
+                            </人物:合作伙伴>
+                            <人物:朋友关系>
+                              <人物:其他相关人物 rdf:ID="谢缵泰">
+                                <人物:朋友关系>
+                                  <人物:世纪伟人 rdf:ID="孙中山">
+                                    <人物:号 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                    >逸仙</人物:号>
+                                    <人物:忌日 rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+                                    >1925-03-12</人物:忌日>
+                                    <人物:国籍 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                    >中国</人物:国籍>
+                                    <人物:部下是>
+                                      <人物:其他相关人物 rdf:ID="汪精卫">
+                                        <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1944"/>
+                                        <人物:族名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                        ></人物:族名>
+                                        <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                        >男</人物:性别>
+                                        <人物:部下是>
+                                          <人物:其他相关人物 rdf:ID="岑德广">
+                                            <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1897"/>
+                                            <人物:上司是 rdf:resource="#汪精卫"/>
+                                            <人物:妻子是>
+                                              <人物:唐氏家族 rdf:ID="唐宝玫">
+                                                <人物:性别 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#string"
+                                                >女</人物:性别>
+                                                <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1902"/>
+                                                <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1941"/>
+                                                <人物:父亲是>
+                                                  <人物:唐氏家族 rdf:ID="唐绍仪">
+                                                    <人物:别名 rdf:datatype=
+                                                    "http://www.w3.org/2001/XMLSchema#string"
+                                                    ></人物:别名>
+                                                    <人物:女儿是>
+                                                      <人物:唐氏家族 rdf:ID="唐宝琏">
+                                                        <人物:祖父是 rdf:resource="#唐廷枢"/>
+                                                        <人物:父亲是 rdf:resource="#唐绍仪"/>
+                                                        <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1914"/>
+                                                        <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1925"/>
+                                                        <人物:母亲是>
+                                                          <人物:其他相关人物 rdf:ID="吴维翘">
+                                                            <人物:丈夫是 rdf:resource="#唐绍仪"/>
+                                                            <人物:性别
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >男</人物:性别>
+                                                            <人物:国籍
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            ></人物:国籍>
+                                                          </人物:其他相关人物>
+                                                        </人物:母亲是>
+                                                        <人物:性别
+                                                         rdf:datatype=
+                                                        "http://www.w3.org/2001/XMLSchema#string"
+                                                        >女</人物:性别>
+                                                      </人物:唐氏家族>
+                                                    </人物:女儿是>
+                                                    <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1938"/>
+                                                    <人物:性别 rdf:datatype=
+                                                    "http://www.w3.org/2001/XMLSchema#string"
+                                                    >男</人物:性别>
+                                                    <人物:儿子是>
+                                                      <人物:唐氏家族 rdf:ID="唐栋">
+                                                        <人物:父亲是 rdf:resource="#唐绍仪"/>
+                                                      </人物:唐氏家族>
+                                                    </人物:儿子是>
+                                                    <rdfs:comment
+                                                     rdf:datatype=
+                                                    "http://www.w3.org/2001/XMLSchema#string"
+                                                    >唐廷枢侄女</rdfs:comment>
+                                                    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1962"/>
+                                                    <人物:女婿是>
+                                                      <人物:军政要人 rdf:ID="顾维钧">
+                                                        <人物:性别
+                                                         rdf:datatype=
+                                                        "http://www.w3.org/2001/XMLSchema#string"
+                                                        >男</人物:性别>
+                                                        <人物:妻子是>
+                                                          <人物:其他相关人物 rdf:ID="黄蕙兰">
+                                                            <人物:性别
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >女</人物:性别>
+                                                            <人物:别名
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            ></人物:别名>
+                                                            <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1893"/>
+                                                            <人物:丈夫是 rdf:resource="#顾维钧"/>
+                                                          </人物:其他相关人物>
+                                                        </人物:妻子是>
+                                                        <人物:岳父是>
+                                                          <人物:其他相关人物 rdf:ID="黄仲涵">
+                                                            <人物:女儿是 rdf:resource="#黄蕙兰"/>
+                                                            <人物:性别
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >男</人物:性别>
+                                                          </人物:其他相关人物>
+                                                        </人物:岳父是>
+                                                        <人物:忌日
+                                                         rdf:datatype=
+                                                        "http://www.w3.org/2001/XMLSchema#date"
+                                                        >1985-11-14</人物:忌日>
+                                                        <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1985"/>
+                                                        <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1888"/>
+                                                        <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#上海市"/>
+                                                        <人物:父亲是>
+                                                          <人物:其他相关人物 rdf:ID="顾晴川">
+                                                            <人物:儿子是 rdf:resource="#顾维钧"/>
+                                                            <人物:性别
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >男</人物:性别>
+                                                          </人物:其他相关人物>
+                                                        </人物:父亲是>
+                                                        <人物:字
+                                                         rdf:datatype=
+                                                        "http://www.w3.org/2001/XMLSchema#string"
+                                                        ></人物:字>
+                                                        <人物:妻子是>
+                                                          <人物:唐氏家族 rdf:ID="唐宝玥">
+                                                            <人物:祖父是 rdf:resource="#唐廷枢"/>
+                                                            <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1918"/>
+                                                            <人物:性别
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >女</人物:性别>
+                                                            <人物:儿子是>
+                                                              <人物:香山居民 rdf:ID="顾德昌">
+    <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >男</人物:性别>
+    <人物:母亲是 rdf:resource="#唐宝玥"/>
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1915"/>
+    <人物:父亲是 rdf:resource="#顾维钧"/>                             </人物:香山居民>
+                                                            </人物:儿子是>
+                                                            <人物:女儿是>
+                                                              <人物:香山居民 rdf:ID="顾菊珍">
+    <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >女</人物:性别>
+    <人物:父亲是 rdf:resource="#顾维钧"/>
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1918"/>
+    <人物:母亲是 rdf:resource="#唐宝玥"/>                             </人物:香山居民>
+                                                            </人物:女儿是>
+                                                            <人物:丈夫是 rdf:resource="#顾维钧"/>
+                                                            <人物:别名
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            ></人物:别名>
+                                                          </人物:唐氏家族>
+                                                        </人物:妻子是>
+                                                        <人物:妻子是>
+                                                          <人物:其他相关人物 rdf:ID="张润娥">
+                                                            <人物:性别
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >女</人物:性别>
+                                                            <人物:丈夫是 rdf:resource="#顾维钧"/>
+                                                          </人物:其他相关人物>
+                                                        </人物:妻子是>
+                                                        <人物:岳父是 rdf:resource="#唐绍仪"/>
+                                                      </人物:军政要人>
+                                                    </人物:女婿是>
+                                                    <人物:老师是 rdf:resource="#容闳"/>
+                                                    <人物:儿子是>
+                                                      <人物:唐氏家族 rdf:ID="唐榴">
+                                                        <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1899"/>
+                                                        <人物:父亲是 rdf:resource="#唐绍仪"/>
+                                                        <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1979"/>
+                                                      </人物:唐氏家族>
+                                                    </人物:儿子是>
+                                                    <人物:女婿是>
+                                                      <人物:其他相关人物 rdf:ID="梁宝畅">
+                                                        <人物:妻子是>
+                                                          <人物:唐氏家族 rdf:ID="唐宝琄">
+                                                            <人物:父亲是 rdf:resource="#唐绍仪"/>
+                                                            <人物:性别
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >女</人物:性别>
+                                                            <人物:祖父是 rdf:resource="#唐廷枢"/>
+                                                          </人物:唐氏家族>
+                                                        </人物:妻子是>
+                                                        <人物:性别
+                                                         rdf:datatype=
+                                                        "http://www.w3.org/2001/XMLSchema#string"
+                                                        >女</人物:性别>
+                                                        <人物:岳父是 rdf:resource="#唐绍仪"/>
+                                                      </人物:其他相关人物>
+                                                    </人物:女婿是>
+                                                    <人物:女婿是>
+                                                      <人物:其他相关人物 rdf:ID="张谦">
+                                                        <人物:性别
+                                                         rdf:datatype=
+                                                        "http://www.w3.org/2001/XMLSchema#string"
+                                                        >男</人物:性别>
+                                                        <人物:妻子是>
+                                                          <人物:唐氏家族 rdf:ID="唐宝璋">
+                                                            <人物:父亲是 rdf:resource="#唐绍仪"/>
+                                                            <人物:性别
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >女</人物:性别>
+                                                            <人物:丈夫是 rdf:resource="#张谦"/>
+                                                            <人物:祖父是 rdf:resource="#唐廷枢"/>
+                                                          </人物:唐氏家族>
+                                                        </人物:妻子是>
+                                                      </人物:其他相关人物>
+                                                    </人物:女婿是>
+                                                    <人物:女儿是>
+                                                      <人物:唐氏家族 rdf:ID="唐宝玧">
+                                                        <人物:母亲是 rdf:resource="#吴维翘"/>
+                                                        <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1923"/>
+                                                        <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1915"/>
+                                                        <人物:祖父是 rdf:resource="#唐廷枢"/>
+                                                        <人物:性别
+                                                         rdf:datatype=
+                                                        "http://www.w3.org/2001/XMLSchema#string"
+                                                        >女</人物:性别>
+                                                        <人物:父亲是 rdf:resource="#唐绍仪"/>
+                                                      </人物:唐氏家族>
+                                                    </人物:女儿是>
+                                                    <人物:女儿是 rdf:resource="#唐宝琄"/>
+                                                    <人物:儿子是>
+                                                      <人物:唐氏家族 rdf:ID="唐栎">
+                                                        <人物:哥哥是>
+                                                          <人物:唐氏家族 rdf:ID="唐柱">
+                                                            <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1912"/>
+                                                            <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1976"/>
+                                                            <人物:性别
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >男</人物:性别>
+                                                          </人物:唐氏家族>
+                                                        </人物:哥哥是>
+                                                        <人物:祖父是 rdf:resource="#唐廷枢"/>
+                                                        <人物:姐夫是>
+                                                          <人物:其他相关人物 rdf:ID="诸昌龄">
+                                                            <人物:性别
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >男</人物:性别>
+                                                            <人物:岳父是 rdf:resource="#唐绍仪"/>
+                                                            <人物:妻子是>
+                                                              <人物:唐氏家族 rdf:ID="唐宝瑢">
+    <人物:父亲是 rdf:resource="#唐绍仪"/>
+    <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >女</人物:性别>
+    <人物:母亲是 rdf:resource="#吴维翘"/>
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1916"/>
+    <人物:祖父是 rdf:resource="#唐廷枢"/>                             </人物:唐氏家族>
+                                                            </人物:妻子是>
+                                                            <人物:岳母是 rdf:resource="#吴维翘"/>
+                                                          </人物:其他相关人物>
+                                                        </人物:姐夫是>
+                                                        <人物:妹妹是>
+                                                          <人物:唐氏家族 rdf:ID="唐宝珊">
+                                                            <人物:姐夫是 rdf:resource="#张谦"/>
+                                                            <人物:姐姐是 rdf:resource="#唐宝玧"/>
+                                                            <人物:姐姐是>
+                                                              <人物:唐氏家族 rdf:ID="唐宝珅">
+    <人物:哥哥是 rdf:resource="#唐榴"/>
+    <人物:祖父是 rdf:resource="#唐廷枢"/>
+    <人物:姐姐是 rdf:resource="#唐宝琄"/>
+    <人物:姐姐是 rdf:resource="#唐宝琏"/>
+    <人物:哥哥是 rdf:resource="#唐柱"/>
+    <人物:姐夫是>
+      <人物:其他相关人物 rdf:ID="诸昌年">
+        <人物:岳母是 rdf:resource="#吴维翘"/>
+        <人物:妻子是>
+          <人物:唐氏家族 rdf:ID="唐宝珠">
+            <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1979"/>
+            <人物:祖父是 rdf:resource="#唐廷枢"/>
+            <人物:父亲是 rdf:resource="#唐绍仪"/>
+          </人物:唐氏家族>
+        </人物:妻子是>
+        <人物:岳父是 rdf:resource="#唐绍仪"/>
+      </人物:其他相关人物>
+    </人物:姐夫是>
+    <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1978"/>
+    <人物:父亲是 rdf:resource="#唐绍仪"/>
+    <人物:姐夫是 rdf:resource="#顾维钧"/>
+    <人物:母亲是 rdf:resource="#吴维翘"/>
+    <人物:姐姐是 rdf:resource="#唐宝璋"/>
+    <人物:姐姐是 rdf:resource="#唐宝玥"/>
+    <人物:姐姐是 rdf:resource="#唐宝珠"/>
+    <人物:姐夫是 rdf:resource="#诸昌龄"/>
+    <人物:姐夫是 rdf:resource="#岑德广"/>
+    <人物:妹夫是>
+      <人物:其他相关人物 rdf:ID="曹培庆">
+        <人物:岳父是 rdf:resource="#唐绍仪"/>
+        <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >男</人物:性别>
+        <人物:岳母是 rdf:resource="#吴维翘"/>
+        <人物:妻子是 rdf:resource="#唐宝珊"/>
+      </人物:其他相关人物>
+    </人物:妹夫是>
+    <人物:妹妹是 rdf:resource="#唐宝珊"/>
+    <人物:姐夫是 rdf:resource="#张谦"/>
+    <人物:姐姐是 rdf:resource="#唐宝玫"/>
+    <人物:姐姐是 rdf:resource="#唐宝瑢"/>
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1920"/>
+    <人物:姐夫是>
+      <人物:其他相关人物 rdf:ID="佘守廉">
+        <人物:岳父是 rdf:resource="#唐绍仪"/>
+        <人物:妻子是 rdf:resource="#唐宝瑢"/>
+        <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >男</人物:性别>
+        <人物:岳母是 rdf:resource="#吴维翘"/>
+      </人物:其他相关人物>
+    </人物:姐夫是>
+    <人物:哥哥是 rdf:resource="#唐栋"/>
+    <人物:姐夫是>
+      <人物:其他相关人物 rdf:ID="甘鉴先">
+        <人物:妻子是 rdf:resource="#唐宝玫"/>
+        <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >男</人物:性别>
+        <人物:岳父是 rdf:resource="#唐绍仪"/>
+      </人物:其他相关人物>
+    </人物:姐夫是>
+    <人物:姐姐是 rdf:resource="#唐宝玧"/>                             </人物:唐氏家族>
+                                                            </人物:姐姐是>
+                                                            <人物:父亲是 rdf:resource="#唐绍仪"/>
+                                                            <人物:姐夫是 rdf:resource="#诸昌年"/>
+                                                            <人物:姐姐是 rdf:resource="#唐宝琄"/>
+                                                            <人物:姐夫是 rdf:resource="#岑德广"/>
+                                                            <人物:姐姐是 rdf:resource="#唐宝玥"/>
+                                                            <人物:姐姐是 rdf:resource="#唐宝瑢"/>
+                                                            <人物:姐夫是 rdf:resource="#甘鉴先"/>
+                                                            <人物:姐夫是 rdf:resource="#佘守廉"/>
+                                                            <人物:姐夫是 rdf:resource="#诸昌龄"/>
+                                                            <人物:性别
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >女</人物:性别>
+                                                            <人物:姐夫是 rdf:resource="#顾维钧"/>
+                                                            <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y2013"/>
+                                                            <人物:哥哥是>
+                                                              <人物:唐氏家族 rdf:ID="唐梁">
+    <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >男</人物:性别>
+    <人物:父亲是 rdf:resource="#唐绍仪"/>
+    <人物:祖父是 rdf:resource="#唐廷枢"/>
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1916"/>
+    <人物:母亲是 rdf:resource="#吴维翘"/>
+    <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1969"/>
+                                                              </人物:唐氏家族>
+                                                            </人物:哥哥是>
+                                                            <人物:母亲是 rdf:resource="#吴维翘"/>
+                                                            <人物:哥哥是 rdf:resource="#唐栎"/>
+                                                            <人物:姐姐是 rdf:resource="#唐宝玫"/>
+                                                            <人物:姐夫是>
+                                                              <人物:其他相关人物 rdf:ID="李成义">
+    <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >男</人物:性别>
+    <人物:妻子是 rdf:resource="#唐宝珅"/>
+    <人物:岳母是 rdf:resource="#吴维翘"/>
+    <人物:岳父是 rdf:resource="#唐绍仪"/>                             </人物:其他相关人物>
+                                                            </人物:姐夫是>
+                                                            <人物:祖父是 rdf:resource="#唐廷枢"/>
+                                                            <人物:姐姐是 rdf:resource="#唐宝珠"/>
+                                                            <人物:哥哥是 rdf:resource="#唐榴"/>
+                                                            <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1930"/>
+                                                            <人物:哥哥是 rdf:resource="#唐柱"/>
+                                                            <人物:姐姐是 rdf:resource="#唐宝琏"/>
+                                                            <人物:姐姐是 rdf:resource="#唐宝璋"/>
+                                                          </人物:唐氏家族>
+                                                        </人物:妹妹是>
+                                                        <人物:姐夫是 rdf:resource="#顾维钧"/>
+                                                        <人物:父亲是 rdf:resource="#唐绍仪"/>
+                                                        <人物:弟弟是>
+                                                          <人物:唐氏家族 rdf:ID="唐楗">
+                                                            <人物:祖父是 rdf:resource="#唐廷枢"/>
+                                                            <人物:父亲是 rdf:resource="#唐绍仪"/>
+                                                            <人物:姐夫是 rdf:resource="#诸昌年"/>
+                                                            <人物:姐夫是 rdf:resource="#岑德广"/>
+                                                            <人物:母亲是 rdf:resource="#吴维翘"/>
+                                                            <人物:姐姐是 rdf:resource="#唐宝珠"/>
+                                                            <人物:姐夫是 rdf:resource="#曹培庆"/>
+                                                            <人物:姐夫是 rdf:resource="#梁宝畅"/>
+                                                            <人物:姐姐是 rdf:resource="#唐宝瑢"/>
+                                                            <人物:哥哥是 rdf:resource="#唐梁"/>
+                                                            <人物:姐夫是 rdf:resource="#顾维钧"/>
+                                                            <人物:姐夫是 rdf:resource="#张谦"/>
+                                                            <人物:哥哥是 rdf:resource="#唐栋"/>
+                                                            <人物:哥哥是 rdf:resource="#唐榴"/>
+                                                            <人物:姐姐是 rdf:resource="#唐宝琏"/>
+                                                            <人物:姐姐是 rdf:resource="#唐宝琄"/>
+                                                            <人物:姐夫是 rdf:resource="#李成义"/>
+                                                            <人物:姐姐是 rdf:resource="#唐宝珅"/>
+                                                            <人物:姐姐是 rdf:resource="#唐宝玥"/>
+                                                            <人物:姐姐是 rdf:resource="#唐宝玫"/>
+                                                            <人物:姐夫是 rdf:resource="#甘鉴先"/>
+                                                            <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1935"/>
+                                                            <人物:姐姐是 rdf:resource="#唐宝珊"/>
+                                                            <人物:哥哥是 rdf:resource="#唐栎"/>
+                                                            <人物:姐夫是 rdf:resource="#佘守廉"/>
+                                                            <人物:性别
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >男</人物:性别>
+                                                            <人物:姐姐是 rdf:resource="#唐宝璋"/>
+                                                            <人物:姐夫是 rdf:resource="#诸昌龄"/>
+                                                            <人物:哥哥是 rdf:resource="#唐柱"/>
+                                                          </人物:唐氏家族>
+                                                        </人物:弟弟是>
+                                                        <人物:哥哥是 rdf:resource="#唐榴"/>
+                                                        <人物:姐夫是 rdf:resource="#李成义"/>
+                                                        <人物:姐姐是 rdf:resource="#唐宝琄"/>
+                                                        <人物:母亲是 rdf:resource="#吴维翘"/>
+                                                        <人物:性别
+                                                         rdf:datatype=
+                                                        "http://www.w3.org/2001/XMLSchema#string"
+                                                        >女</人物:性别>
+                                                        <人物:姐夫是 rdf:resource="#岑德广"/>
+                                                        <人物:哥哥是 rdf:resource="#唐栋"/>
+                                                        <人物:姐夫是 rdf:resource="#佘守廉"/>
+                                                        <人物:姐姐是 rdf:resource="#唐宝玧"/>
+                                                        <人物:姐姐是 rdf:resource="#唐宝珠"/>
+                                                        <人物:姐姐是 rdf:resource="#唐宝珅"/>
+                                                        <人物:姐夫是 rdf:resource="#张谦"/>
+                                                        <人物:妹夫是 rdf:resource="#曹培庆"/>
+                                                        <人物:姐姐是 rdf:resource="#唐宝琏"/>
+                                                        <人物:姐姐是 rdf:resource="#唐宝瑢"/>
+                                                        <人物:姐姐是 rdf:resource="#唐宝玫"/>
+                                                        <人物:姐夫是 rdf:resource="#诸昌年"/>
+                                                        <人物:姐夫是 rdf:resource="#甘鉴先"/>
+                                                        <人物:姐姐是 rdf:resource="#唐宝玥"/>
+                                                        <人物:哥哥是 rdf:resource="#唐梁"/>
+                                                      </人物:唐氏家族>
+                                                    </人物:儿子是>
+                                                    <人物:女儿是 rdf:resource="#唐宝瑢"/>
+                                                    <人物:女儿是 rdf:resource="#唐宝珅"/>
+                                                    <人物:妻子是 rdf:resource="#吴维翘"/>
+                                                    <人物:女儿是 rdf:resource="#唐宝玥"/>
+                                                    <人物:女儿是 rdf:resource="#唐宝珠"/>
+                                                    <人物:儿子是 rdf:resource="#唐梁"/>
+                                                    <人物:上司是>
+                                                      <人物:其他相关人物 rdf:ID="袁世凯">
+                                                        <人物:性别
+                                                         rdf:datatype=
+                                                        "http://www.w3.org/2001/XMLSchema#string"
+                                                        >男</人物:性别>
+                                                        <人物:部下是>
+                                                          <人物:其他相关人物 rdf:ID="梁敦彦">
+                                                            <人物:忌日
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#date"
+                                                            >1924-04-10</人物:忌日>
+                                                            <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1924"/>
+                                                            <人物:老师是 rdf:resource="#容闳"/>
+                                                            <人物:外文名
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >Liang Tun Yen</人物:外文名>
+                                                            <人物:字
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >崧生</人物:字>
+                                                            <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1957"/>
+                                                            <人物:性别
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >男</人物:性别>
+                                                          </人物:其他相关人物>
+                                                        </人物:部下是>
+                                                        <人物:部下是>
+                                                          <人物:其他相关人物 rdf:ID="周寿臣">
+                                                            <人物:上司是 rdf:resource="#袁世凯"/>
+                                                            <人物:忌日
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#date"
+                                                            >1959-01-23</人物:忌日>
+                                                            <人物:同事关系>
+                                                              <人物:莫氏家族 rdf:ID="陆恭蕙">
+    <人物:同事关系 rdf:resource="#周寿臣"/>                            </人物:莫氏家族>
+                                                            </人物:同事关系>
+                                                            <人物:同事关系>
+                                                              <人物:军政要人 rdf:ID="梁如浩">
+    <人物:别名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    ></人物:别名>
+    <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1941"/>
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1863"/>
+    <人物:同事关系 rdf:resource="#周寿臣"/>
+    <人物:号 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    ></人物:号>
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+    <人物:字 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    ></人物:字>                                                  </人物:军政要人>
+                                                            </人物:同事关系>
+                                                            <人物:老师是 rdf:resource="#容闳"/>
+                                                            <人物:同事关系>
+                                                              <人物:莫氏家族 rdf:ID="莫干生">
+    <人物:孙子是>
+      <人物:莫氏家族 rdf:ID="莫华伦"/>
+    </人物:孙子是>
+    <人物:孙女是 rdf:resource="#陆恭蕙"/>
+    <人物:外文名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    ></人物:外文名>
+    <人物:同事关系 rdf:resource="#周寿臣"/>
+    <人物:字 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    ></人物:字>
+    <人物:别名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    ></人物:别名>
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1882"/>
+    <人物:号 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    ></人物:号>
+    <人物:祖父是>
+      <人物:莫氏家族 rdf:ID="莫仕扬">
+        <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#会同村"/>
+        <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+        <人物:同乡关系>
+          <人物:从商人士 rdf:ID="如阿春">
+            <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >唐廷枢同乡</rdfs:comment>
+            <人物:同乡关系 rdf:resource="#莫仕扬"/>
+            <人物:同乡关系 rdf:resource="#唐廷枢"/>
+          </人物:从商人士>
+        </人物:同乡关系>
+        <人物:同乡关系>
+          <人物:从商人士 rdf:ID="唐隆茂">
+            <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >唐廷枢同乡</rdfs:comment>
+            <人物:同乡关系 rdf:resource="#莫仕扬"/>
+            <人物:同乡关系 rdf:resource="#唐廷枢"/>
+          </人物:从商人士>
+        </人物:同乡关系>
+        <人物:儿子是>
+          <人物:莫氏家族 rdf:ID="莫藻泉">
+            <人物:儿子是 rdf:resource="#莫干生"/>
+          </人物:莫氏家族>
+        </人物:儿子是>
+      </人物:莫氏家族>
+    </人物:祖父是>
+    <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1958"/>
+    <人物:生日 rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+    >1882-06-26</人物:生日>
+    <人物:孙子是>
+      <人物:莫氏家族 rdf:ID="莫华钊"/>
+    </人物:孙子是>                                                 </人物:莫氏家族>
+                                                            </人物:同事关系>
+                                                            <人物:性别
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >男</人物:性别>
+                                                            <人物:外文名
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >Sir Shou-son Chow</人物:外文名>
+                                                            <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香港特别行政区"/>
+                                                            <人物:生日
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#date"
+                                                            >1861-03-11</人物:生日>
+                                                            <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1861"/>
+                                                            <人物:别名
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >周长龄</人物:别名>
+                                                          </人物:其他相关人物>
+                                                        </人物:部下是>
+                                                        <人物:部下是>
+                                                          <人物:留学人士 rdf:ID="蔡绍基">
+                                                            <人物:上司是 rdf:resource="#袁世凯"/>
+                                                            <人物:同事关系 rdf:resource="#唐廷植"/>
+                                                            <人物:同事关系 rdf:resource="#容闳"/>
+                                                            <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1859"/>
+                                                            <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#北岭村"/>
+                                                            <人物:老师是 rdf:resource="#容闳"/>
+                                                            <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1933"/>
+                                                            <人物:同事关系>
+                                                              <人物:军政要人 rdf:ID="吴健彰">
+    <人物:同事关系 rdf:resource="#容闳"/>
+    <人物:同事关系 rdf:resource="#蔡绍基"/>
+    <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1866"/>
+    <人物:别名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >阿爽</人物:别名>
+    <人物:别名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >天显</人物:别名>
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1791"/>
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#翠微村"/>
+    <人物:号 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >道普</人物:号>                                                </人物:军政要人>
+                                                            </人物:同事关系>
+                                                            <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+                                                          </人物:留学人士>
+                                                        </人物:部下是>
+                                                        <人物:部下是 rdf:resource="#唐绍仪"/>
+                                                      </人物:其他相关人物>
+                                                    </人物:上司是>
+                                                    <人物:忌日 rdf:datatype=
+                                                    "http://www.w3.org/2001/XMLSchema#date"
+                                                    >1938-09-30</人物:忌日>
+                                                    <人物:女婿是 rdf:resource="#岑德广"/>
+                                                    <人物:儿子是 rdf:resource="#唐柱"/>
+                                                    <人物:儿子是 rdf:resource="#唐楗"/>
+                                                    <人物:女婿是 rdf:resource="#甘鉴先"/>
+                                                    <人物:同乡关系>
+                                                      <人物:文化名家 rdf:ID="唐国安">
+                                                        <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1858"/>
+                                                        <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#唐家湾村"/>
+                                                        <人物:生日
+                                                         rdf:datatype=
+                                                        "http://www.w3.org/2001/XMLSchema#date"
+                                                        >1858-10-27</人物:生日>
+                                                        <人物:号
+                                                         rdf:datatype=
+                                                        "http://www.w3.org/2001/XMLSchema#string"
+                                                        ></人物:号>
+                                                        <人物:性别
+                                                         rdf:datatype=
+                                                        "http://www.w3.org/2001/XMLSchema#string"
+                                                        >男</人物:性别>
+                                                        <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+                                                        <人物:忌日
+                                                         rdf:datatype=
+                                                        "http://www.w3.org/2001/XMLSchema#date"
+                                                        >1913-08-22</人物:忌日>
+                                                        <人物:同乡关系 rdf:resource="#唐绍仪"/>
+                                                        <人物:外文名
+                                                         rdf:datatype=
+                                                        "http://www.w3.org/2001/XMLSchema#string"
+                                                        ></人物:外文名>
+                                                        <人物:字
+                                                         rdf:datatype=
+                                                        "http://www.w3.org/2001/XMLSchema#string"
+                                                        ></人物:字>
+                                                      </人物:文化名家>
+                                                    </人物:同乡关系>
+                                                    <人物:字 rdf:datatype=
+                                                    "http://www.w3.org/2001/XMLSchema#string"
+                                                    ></人物:字>
+                                                    <人物:女儿是 rdf:resource="#唐宝玫"/>
+                                                    <人物:生日 rdf:datatype=
+                                                    "http://www.w3.org/2001/XMLSchema#date"
+                                                    >1962-01-02</人物:生日>
+                                                    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#唐家村"/>
+                                                    <人物:女儿是 rdf:resource="#唐宝珊"/>
+                                                  </人物:唐氏家族>
+                                                </人物:父亲是>
+                                                <人物:丈夫是 rdf:resource="#岑德广"/>
+                                                <人物:丈夫是 rdf:resource="#甘鉴先"/>
+                                                <人物:祖父是 rdf:resource="#唐廷枢"/>
+                                              </人物:唐氏家族>
+                                            </人物:妻子是>
+                                            <人物:性别 rdf:datatype=
+                                            "http://www.w3.org/2001/XMLSchema#string"
+                                            >男</人物:性别>
+                                            <人物:岳父是 rdf:resource="#唐绍仪"/>
+                                          </人物:其他相关人物>
+                                        </人物:部下是>
+                                        <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1883"/>
+                                        <人物:忌日 rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+                                        >1944-11-10</人物:忌日>
+                                        <人物:妻子是>
+                                          <人物:其他相关人物 rdf:ID="陈璧君">
+                                            <人物:丈夫是 rdf:resource="#汪精卫"/>
+                                            <人物:性别 rdf:datatype=
+                                            "http://www.w3.org/2001/XMLSchema#string"
+                                            >女</人物:性别>
+                                          </人物:其他相关人物>
+                                        </人物:妻子是>
+                                        <人物:同事关系>
+                                          <人物:军政要人 rdf:ID="廖仲恺">
+                                            <人物:儿子是>
+                                              <人物:军政要人 rdf:ID="廖承志"/>
+                                            </人物:儿子是>
+                                            <人物:字 rdf:datatype=
+                                            "http://www.w3.org/2001/XMLSchema#string"
+                                            ></人物:字>
+                                            <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1925"/>
+                                            <人物:妻子是>
+                                              <人物:其他相关人物 rdf:ID="何香凝">
+                                                <人物:儿子是 rdf:resource="#廖承志"/>
+                                                <人物:女儿是>
+                                                  <人物:乡贤俊彦 rdf:ID="廖梦醒"/>
+                                                </人物:女儿是>
+                                                <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1972"/>
+                                                <人物:生日 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#date"
+                                                >1878-06-27</人物:生日>
+                                                <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1878"/>
+                                                <人物:性别 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#string"
+                                                >女</人物:性别>
+                                                <人物:丈夫是 rdf:resource="#廖仲恺"/>
+                                              </人物:其他相关人物>
+                                            </人物:妻子是>
+                                            <人物:女儿是 rdf:resource="#廖梦醒"/>
+                                            <人物:生日 rdf:datatype=
+                                            "http://www.w3.org/2001/XMLSchema#date"
+                                            >1877-04-23</人物:生日>
+                                            <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1877"/>
+                                            <人物:别名 rdf:datatype=
+                                            "http://www.w3.org/2001/XMLSchema#string"
+                                            ></人物:别名>
+                                            <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#旧金山"/>
+                                            <人物:同事关系 rdf:resource="#汪精卫"/>
+                                            <人物:别名 rdf:datatype=
+                                            "http://www.w3.org/2001/XMLSchema#string"
+                                            >恩煦</人物:别名>
+                                          </人物:军政要人>
+                                        </人物:同事关系>
+                                        <人物:上司是 rdf:resource="#孙中山"/>
+                                        <人物:别名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                        ></人物:别名>
+                                        <人物:生日 rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+                                        >1883-05-04</人物:生日>
+                                      </人物:其他相关人物>
+                                    </人物:部下是>
+                                    <人物:称号 rdf:resource="http://www.owl-ontologies.com/Duty_Title.owl#国父"/>
+                                    <人物:妻子是>
+                                      <人物:其他相关人物 rdf:ID="大月薰">
+                                        <人物:外文名 xml:lang="en"
+                                        >Kaoru Otsuki</人物:外文名>
+                                        <人物:丈夫是 rdf:resource="#孙中山"/>
+                                        <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                        >女</人物:性别>
+                                      </人物:其他相关人物>
+                                    </人物:妻子是>
+                                    <人物:外文名 xml:lang="en">Sun Yat-sen</人物:外文名>
+                                    <人物:生日 rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+                                    >1866-11-12</人物:生日>
+                                    <人物:民族 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                    >汉族</人物:民族>
+                                    <人物:妻子是>
+                                      <人物:香山居民 rdf:ID="卢慕贞">
+                                        <rdfs:comment rdf:datatype=
+                                        "http://www.w3.org/2001/XMLSchema#string"
+                                        >中华民国国父孙中山原配夫人</rdfs:comment>
+                                      </人物:香山居民>
+                                    </人物:妻子是>
+                                    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1866"/>
+                                    <人物:女儿是>
+                                      <人物:香山居民 rdf:ID="孙娫">
+                                        <rdfs:comment rdf:datatype=
+                                        "http://www.w3.org/2001/XMLSchema#string"
+                                        >孙娫，孙中山长女。1894年春生于广东省香山县翠亨村。时值广东起义失败，在襁褓中随母避难檀香山。1907年随母迁居香港九龙。1910年随母赴槟榔屿与父亲团聚，后留居槟城。辛亥革命胜利后，与家人一起赴南京与父亲团聚，后在父亲巡视全国时伴随左右。1912年与兄妹一起留学美国，就读于加州柏克莱大学。在美读书期间，勤奋好学，成绩优异。</rdfs:comment>
+                                        <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                        >女</人物:性别>
+                                        <人物:忌日 rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+                                        >1913-06-25</人物:忌日>
+                                        <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#翠亨村"/>
+                                        <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1894"/>
+                                      </人物:香山居民>
+                                    </人物:女儿是>
+                                    <人物:别名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                    >孙文</人物:别名>
+                                    <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                    >男</人物:性别>
+                                    <人物:同乡关系>
+                                      <人物:军政要人 rdf:ID="程璧光">
+                                        <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1918"/>
+                                        <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1861"/>
+                                        <人物:同乡关系 rdf:resource="#孙中山"/>
+                                        <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+                                      </人物:军政要人>
+                                    </人物:同乡关系>
+                                    <人物:儿子是>
+                                      <人物:军政要人 rdf:ID="孙科">
+                                        <人物:同乡关系>
+                                          <人物:军政要人 rdf:ID="杨心如">
+                                            <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1868"/>
+                                            <人物:同乡关系 rdf:resource="#孙中山"/>
+                                            <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+                                            <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#翠亨村"/>
+                                            <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1946"/>
+                                            <人物:同乡关系 rdf:resource="#孙科"/>
+                                            <人物:号 rdf:datatype=
+                                            "http://www.w3.org/2001/XMLSchema#string"
+                                            ></人物:号>
+                                            <人物:字 rdf:datatype=
+                                            "http://www.w3.org/2001/XMLSchema#string"
+                                            ></人物:字>
+                                            <人物:字 rdf:datatype=
+                                            "http://www.w3.org/2001/XMLSchema#string"
+                                            >兆蓉</人物:字>
+                                          </人物:军政要人>
+                                        </人物:同乡关系>
+                                        <人物:同乡关系>
+                                          <人物:军政要人 rdf:ID="杨鹤龄">
+                                            <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#翠亨村"/>
+                                            <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+                                            <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1868"/>
+                                            <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1924"/>
+                                            <人物:同乡关系 rdf:resource="#孙中山"/>
+                                            <人物:同乡关系 rdf:resource="#孙科"/>
+                                          </人物:军政要人>
+                                        </人物:同乡关系>
+                                        <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1973"/>
+                                        <人物:生日 rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+                                        >1891-10-20</人物:生日>
+                                        <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#翠亨村"/>
+                                        <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1891"/>
+                                      </人物:军政要人>
+                                    </人物:儿子是>
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >孙中山是中国近代民族民主主义革命的开拓者，中国民主革命伟大先行者，中华民国和中国国民党的缔造者，三民主义的倡导者，创立《五权宪法》。他首举彻底反帝反封建的旗帜，“起共和而终两千年封建帝制”。</rdfs:comment>
+                                    <人物:号 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                    >日新</人物:号>
+                                    <人物:岳父是>
+                                      <人物:其他相关人物 rdf:ID="宋嘉树">
+                                        <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1918"/>
+                                        <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1864"/>
+                                        <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                        >女</人物:性别>
+                                      </人物:其他相关人物>
+                                    </人物:岳父是>
+                                    <人物:化名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                    >中山樵</人物:化名>
+                                    <人物:职业 rdf:resource="http://www.owl-ontologies.com/Duty_Title.owl#革命家"/>
+                                    <人物:同乡关系 rdf:resource="#杨心如"/>
+                                    <人物:同乡关系 rdf:resource="#杨鹤龄"/>
+                                    <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1925"/>
+                                    <人物:称号 rdf:resource="http://www.owl-ontologies.com/Duty_Title.owl#革命先行者"/>
+                                    <人物:朋友关系 rdf:resource="#容闳"/>
+                                    <人物:妻子是>
+                                      <人物:其他相关人物 rdf:ID="宋庆龄">
+                                        <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1893"/>
+                                        <人物:生日 rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+                                        >1893-01-27</人物:生日>
+                                        <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1981"/>
+                                        <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                        >女</人物:性别>
+                                        <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#上海市"/>
+                                        <人物:忌日 rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+                                        >1981-05-29</人物:忌日>
+                                      </人物:其他相关人物>
+                                    </人物:妻子是>
+                                    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#翠亨村"/>
+                                    <人物:朋友关系 rdf:resource="#谢缵泰"/>
+                                    <人物:妻子是>
+                                      <人物:其他相关人物 rdf:ID="陈粹芬">
+                                        <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                        >女</人物:性别>
+                                      </人物:其他相关人物>
+                                    </人物:妻子是>
+                                    <人物:字 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                    >载之</人物:字>
+                                  </人物:世纪伟人>
+                                </人物:朋友关系>
+                                <人物:别名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                ></人物:别名>
+                                <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                >男</人物:性别>
+                                <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#悉尼"/>
+                                <人物:朋友关系 rdf:resource="#容闳"/>
+                                <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1933"/>
+                                <人物:朋友关系>
+                                  <人物:其他相关人物 rdf:ID="洪全福">
+                                    <人物:叔叔是>
+                                      <人物:其他相关人物 rdf:ID="洪秀全">
+                                        <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1814"/>
+                                        <人物:国籍 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                        ></人物:国籍>
+                                        <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                        >男</人物:性别>
+                                        <人物:忌日 rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+                                        >1864-06-01</人物:忌日>
+                                        <人物:民族 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                        ></人物:民族>
+                                        <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#梅州市"/>
+                                        <人物:宗教信仰 rdf:datatype=
+                                        "http://www.w3.org/2001/XMLSchema#string"
+                                        >拜上帝教</人物:宗教信仰>
+                                        <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1864"/>
+                                        <人物:生日 rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+                                        >1814-01-01</人物:生日>
+                                        <人物:侄子是 rdf:resource="#洪全福"/>
+                                      </人物:其他相关人物>
+                                    </人物:叔叔是>
+                                    <人物:朋友关系 rdf:resource="#谢缵泰"/>
+                                    <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                    >男</人物:性别>
+                                  </人物:其他相关人物>
+                                </人物:朋友关系>
+                                <人物:民族 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                ></人物:民族>
+                                <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1871"/>
+                                <人物:别名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                >谢康如 </人物:别名>
+                                <人物:国籍 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                ></人物:国籍>
+                              </人物:其他相关人物>
+                            </人物:朋友关系>
+                            <人物:朋友关系>
+                              <人物:其他相关人物 rdf:ID="洪仁玕">
+                                <人物:别名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                >洪吉甫 </人物:别名>
+                                <人物:国籍 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                ></人物:国籍>
+                                <人物:朋友关系 rdf:resource="#容闳"/>
+                                <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1864"/>
+                                <人物:族弟是 rdf:resource="#洪仁玕"/>
+                                <人物:族兄是 rdf:resource="#洪秀全"/>
+                                <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                >男</人物:性别>
+                                <人物:别名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                >谦益</人物:别名>
+                                <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1822"/>
+                              </人物:其他相关人物>
+                            </人物:朋友关系>
+                            <人物:学生是>
+                              <人物:其他相关人物 rdf:ID="丁崇吉">
+                                <人物:老师是 rdf:resource="#容闳"/>
+                                <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                >男</人物:性别>
+                              </人物:其他相关人物>
+                            </人物:学生是>
+                            <人物:朋友关系 rdf:resource="#孙中山"/>
+                            <人物:生日 rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+                            >1828-11-17</人物:生日>
+                            <人物:学生是>
+                              <人物:其他相关人物 rdf:ID="邝荣光">
+                                <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#台山市"/>
+                                <人物:外文名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                ></人物:外文名>
+                                <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                >男</人物:性别>
+                                <人物:民族 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                ></人物:民族>
+                                <人物:宗教信仰 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                >无神论</人物:宗教信仰>
+                                <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1860"/>
+                                <人物:老师是 rdf:resource="#容闳"/>
+                              </人物:其他相关人物>
+                            </人物:学生是>
+                            <人物:父亲是>
+                              <人物:香山居民 rdf:ID="容明冠">
+                                <人物:妻子是>
+                                  <人物:其他相关人物 rdf:ID="林莲娣">
+                                    <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                    >女</人物:性别>
+                                    <人物:儿子是 rdf:resource="#容闳"/>
+                                    <人物:丈夫是 rdf:resource="#容明冠"/>
+                                  </人物:其他相关人物>
+                                </人物:妻子是>
+                                <人物:儿子是 rdf:resource="#容闳"/>
+                              </人物:香山居民>
+                            </人物:父亲是>
+                            <人物:合作伙伴>
+                              <人物:其他相关人物 rdf:ID="何献墀">
+                                <人物:合作伙伴 rdf:resource="#容闳"/>
+                                <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                >男</人物:性别>
+                              </人物:其他相关人物>
+                            </人物:合作伙伴>
+                            <人物:号 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                            >药甫</人物:号>
+                            <人物:号 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                            >淳甫</人物:号>
+                            <人物:老师是>
+                              <人物:其他相关人物 rdf:ID="海门德">
+                                <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                >男</人物:性别>
+                                <人物:学生是 rdf:resource="#容闳"/>
+                              </人物:其他相关人物>
+                            </人物:老师是>
+                            <人物:朋友关系>
+                              <人物:文化名家 rdf:ID="王韬">
+                                <人物:合作伙伴>
+                                  <人物:文化名家 rdf:ID="黄胜">
+                                    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#南屏村"/>
+                                    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+                                    <人物:儿子是>
+                                      <人物:香山居民 rdf:ID="黄咏义">
+                                        <人物:父亲是 rdf:resource="#黄胜"/>
+                                      </人物:香山居民>
+                                    </人物:儿子是>
+                                    <人物:儿子是>
+                                      <人物:香山居民 rdf:ID="黄咏青">
+                                        <人物:父亲是 rdf:resource="#黄胜"/>
+                                        <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                        >男</人物:性别>
+                                      </人物:香山居民>
+                                    </人物:儿子是>
+                                    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1827"/>
+                                    <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1902"/>
+                                    <人物:宗教信仰 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                    >基督教</人物:宗教信仰>
+                                    <人物:同乡关系 rdf:resource="#容闳"/>
+                                    <人物:老师是 rdf:resource="#容闳"/>
+                                    <人物:儿子是>
+                                      <人物:香山居民 rdf:ID="黄咏仁">
+                                        <人物:父亲是 rdf:resource="#黄胜"/>
+                                        <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                        >男</人物:性别>
+                                      </人物:香山居民>
+                                    </人物:儿子是>
+                                    <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                    >男</人物:性别>
+                                    <人物:合作伙伴 rdf:resource="#王韬"/>
+                                  </人物:文化名家>
+                                </人物:合作伙伴>
+                                <人物:朋友关系 rdf:resource="#容闳"/>
+                                <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                >男</人物:性别>
+                              </人物:文化名家>
+                            </人物:朋友关系>
+                            <人物:学生是>
+                              <人物:其他相关人物 rdf:ID="詹天佑">
+                                <人物:生日 rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+                                >1861-03-17</人物:生日>
+                                <人物:字 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                ></人物:字>
+                                <人物:外文名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                ></人物:外文名>
+                                <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                >男</人物:性别>
+                                <人物:老师是 rdf:resource="#容闳"/>
+                                <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1919"/>
+                                <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1861"/>
+                                <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#南海县"/>
+                                <人物:号 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                ></人物:号>
+                                <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1861"/>
+                                <人物:忌日 rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+                                >1919-04-24</人物:忌日>
+                              </人物:其他相关人物>
+                            </人物:学生是>
+                            <人物:学生是 rdf:resource="#黄胜"/>
+                            <人物:同事关系>
+                              <人物:其他相关人物 rdf:ID="丁日昌">
+                                <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                >男</人物:性别>
+                                <人物:字 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                >持静</人物:字>
+                                <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1823"/>
+                                <人物:别名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                ></人物:别名>
+                                <人物:别名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                >禹生</人物:别名>
+                                <人物:同事关系 rdf:resource="#容闳"/>
+                                <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1882"/>
+                                <人物:民族 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                ></人物:民族>
+                              </人物:其他相关人物>
+                            </人物:同事关系>
+                            <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1912"/>
+                            <人物:同事关系 rdf:resource="#吴健彰"/>
+                            <人物:学生是 rdf:resource="#周寿臣"/>
+                            <人物:号 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                            >纯甫</人物:号>
+                            <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#南屏村"/>
+                            <人物:同事关系 rdf:resource="#蔡绍基"/>
+                            <人物:妻子是>
+                              <人物:其他相关人物 rdf:ID="玛丽·凯罗克">
+                                <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                >女</人物:性别>
+                                <人物:丈夫是 rdf:resource="#容闳"/>
+                                <人物:哥哥是>
+                                  <人物:其他相关人物 rdf:ID="Eeward_Kellogg">
+                                    <人物:妹妹是 rdf:resource="#玛丽·凯罗克"/>
+                                    <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                    >男</人物:性别>
+                                    <人物:妹夫是 rdf:resource="#容闳"/>
+                                  </人物:其他相关人物>
+                                </人物:哥哥是>
+                              </人物:其他相关人物>
+                            </人物:妻子是>
+                            <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+                            <人物:学生是>
+                              <人物:其他相关人物 rdf:ID="梁郭彦">
+                                <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                >男</人物:性别>
+                                <人物:老师是 rdf:resource="#容闳"/>
+                                <人物:上司是 rdf:resource="#袁世凯"/>
+                              </人物:其他相关人物>
+                            </人物:学生是>
+                            <人物:朋友关系>
+                              <人物:其他相关人物 rdf:ID="曾国藩">
+                                <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                >男</人物:性别>
+                                <人物:民族 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                >汉族</人物:民族>
+                                <人物:别名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                >曾传豫</人物:别名>
+                                <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1881"/>
+                                <人物:合作伙伴>
+                                  <人物:徐氏家族 rdf:ID="徐润">
+                                    <人物:合作伙伴 rdf:resource="#曾国藩"/>
+                                    <人物:合作伙伴 rdf:resource="#唐廷枢"/>
+                                    <人物:儿子是>
+                                      <人物:徐氏家族 rdf:ID="徐元生"/>
+                                    </人物:儿子是>
+                                    <人物:儿子是>
+                                      <人物:徐氏家族 rdf:ID="徐叔平"/>
+                                    </人物:儿子是>
+                                    <人物:儿子是>
+                                      <人物:徐氏家族 rdf:ID="徐廷爵"/>
+                                    </人物:儿子是>
+                                    <人物:儿子是>
+                                      <人物:徐氏家族 rdf:ID="徐廷勋"/>
+                                    </人物:儿子是>
+                                    <人物:儿子是>
+                                      <人物:徐氏家族 rdf:ID="徐少之"/>
+                                    </人物:儿子是>
+                                  </人物:徐氏家族>
+                                </人物:合作伙伴>
+                                <人物:别名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                >子城</人物:别名>
+                                <人物:字 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                ></人物:字>
+                                <人物:号 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                ></人物:号>
+                                <人物:生日 rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+                                >1811-11-26</人物:生日>
+                                <人物:国籍 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                ></人物:国籍>
+                                <人物:别名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                >曾伯涵</人物:别名>
+                                <人物:合作伙伴 rdf:resource="#唐廷枢"/>
+                                <人物:外文名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                ></人物:外文名>
+                                <人物:朋友关系 rdf:resource="#容闳"/>
+                                <人物:忌日 rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+                                >1872-03-12</人物:忌日>
+                              </人物:其他相关人物>
+                            </人物:朋友关系>
+                            <人物:老师是>
+                              <人物:其他相关人物 rdf:ID="Samuel_Robins_Brown">
+                                <人物:学生是 rdf:resource="#容闳"/>
+                                <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                >男</人物:性别>
+                              </人物:其他相关人物>
+                            </人物:老师是>
+                            <人物:朋友关系>
+                              <人物:其他相关人物 rdf:ID="李鸿章">
+                                <人物:朋友关系 rdf:resource="#容闳"/>
+                                <人物:合作伙伴 rdf:resource="#唐廷枢"/>
+                                <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                >男</人物:性别>
+                              </人物:其他相关人物>
+                            </人物:朋友关系>
+                            <人物:族名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                            ></人物:族名>
+                            <人物:字 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                            ></人物:字>
+                            <人物:大舅子是 rdf:resource="#Eeward_Kellogg"/>
+                            <人物:学生是 rdf:resource="#唐绍仪"/>
+                            <人物:学生是 rdf:resource="#唐国安"/>
+                            <人物:外文名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                            ></人物:外文名>
+                            <人物:同事关系 rdf:resource="#唐廷植"/>
+                            <人物:学生是>
+                              <人物:其他相关人物 rdf:ID="吴仰曾">
+                                <人物:老师是 rdf:resource="#容闳"/>
+                                <人物:外文名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                ></人物:外文名>
+                                <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                >男</人物:性别>
+                              </人物:其他相关人物>
+                            </人物:学生是>
+                            <人物:母亲是 rdf:resource="#林莲娣"/>
+                            <人物:学生是>
+                              <人物:其他相关人物 rdf:ID="伍光建">
+                                <人物:字 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                ></人物:字>
+                                <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1867"/>
+                                <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                >男</人物:性别>
+                                <人物:笔名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                >于晋 </人物:笔名>
+                                <人物:笔名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                >君朔</人物:笔名>
+                                <人物:老师是 rdf:resource="#容闳"/>
+                                <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1943"/>
+                                <人物:别名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                ></人物:别名>
+                              </人物:其他相关人物>
+                            </人物:学生是>
+                            <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1828"/>
+                            <人物:号 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                            >春浦</人物:号>
+                            <人物:学生是>
+                              <人物:其他相关人物 rdf:ID="方伯梁">
+                                <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                >男</人物:性别>
+                                <人物:老师是 rdf:resource="#容闳"/>
+                              </人物:其他相关人物>
+                            </人物:学生是>
+                            <人物:学生是>
+                              <人物:文化名家 rdf:ID="容国团">
+                                <人物:老师是 rdf:resource="#容闳"/>
+                              </人物:文化名家>
+                            </人物:学生是>
+                            <人物:朋友关系>
+                              <人物:其他相关人物 rdf:ID="Joseph_Hopkins_Twichell">
+                                <人物:朋友关系 rdf:resource="#容闳"/>
+                                <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                >男</人物:性别>
+                              </人物:其他相关人物>
+                            </人物:朋友关系>
+                            <人物:朋友关系>
+                              <人物:其他相关人物 rdf:ID="康梁">
+                                <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                >男</人物:性别>
+                                <人物:朋友关系 rdf:resource="#容闳"/>
+                              </人物:其他相关人物>
+                            </人物:朋友关系>
+                            <人物:学生是>
+                              <人物:其他相关人物 rdf:ID="王劭廉">
+                                <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1866"/>
+                                <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#天津市"/>
+                                <人物:同事关系>
+                                  <人物:从商人士 rdf:ID="盛宣怀">
+                                    <人物:同事关系 rdf:resource="#王劭廉"/>
+                                  </人物:从商人士>
+                                </人物:同事关系>
+                                <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                >男</人物:性别>
+                                <人物:字 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                ></人物:字>
+                                <人物:老师是 rdf:resource="#容闳"/>
+                                <人物:老师是>
+                                  <人物:其他相关人物 rdf:ID="严复">
+                                    <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                    >男</人物:性别>
+                                    <人物:学生是 rdf:resource="#王劭廉"/>
+                                  </人物:其他相关人物>
+                                </人物:老师是>
+                              </人物:其他相关人物>
+                            </人物:学生是>
+                            <人物:同乡关系 rdf:resource="#黄胜"/>
+                            <人物:学生是>
+                              <人物:其他相关人物 rdf:ID="欧阳赓">
+                                <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                >男</人物:性别>
+                                <人物:老师是 rdf:resource="#容闳"/>
+                              </人物:其他相关人物>
+                            </人物:学生是>
+                            <人物:同事关系>
+                              <人物:其他相关人物 rdf:ID="陈兰彬">
+                                <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                >男</人物:性别>
+                                <人物:同事关系 rdf:resource="#容闳"/>
+                              </人物:其他相关人物>
+                            </人物:同事关系>
+                            <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                            >男</人物:性别>
+                            <人物:儿子是>
+                              <人物:军政要人 rdf:ID="容奴槐">
+                                <人物:父亲是 rdf:resource="#容闳"/>
+                              </人物:军政要人>
+                            </人物:儿子是>
+                            <人物:学生是>
+                              <人物:留学人士 rdf:ID="容耀垣">
+                                <人物:老师是 rdf:resource="#容闳"/>
+                              </人物:留学人士>
+                            </人物:学生是>
+                            <人物:学生是>
+                              <人物:其他相关人物 rdf:ID="周万鹏">
+                                <人物:老师是 rdf:resource="#容闳"/>
+                                <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                >男</人物:性别>
+                              </人物:其他相关人物>
+                            </人物:学生是>
+                            <人物:朋友关系>
+                              <人物:其他相关人物 rdf:ID="纯齐勒">
+                                <人物:朋友关系 rdf:resource="#容闳"/>
+                                <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                >男</人物:性别>
+                              </人物:其他相关人物>
+                            </人物:朋友关系>
+                            <人物:学生是>
+                              <人物:其他相关人物 rdf:ID="杨廉臣">
+                                <人物:老师是 rdf:resource="#容闳"/>
+                                <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#福建省"/>
+                                <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                >男</人物:性别>
+                              </人物:其他相关人物>
+                            </人物:学生是>
+                          </人物:留学人士>
+                        </人物:同事关系>
+                        <人物:哥哥是 rdf:resource="#唐廷枢"/>
+                        <人物:同事关系 rdf:resource="#蔡绍基"/>
+                        <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1828"/>
+                        <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#唐家村"/>
+                        <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >男</人物:性别>
+                        <人物:别名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >唐茂枝</人物:别名>
+                      </人物:唐氏家族>
+                    </人物:父亲是>
+                  </人物:唐氏家族>
+                </人物:侄子是>
+                <人物:同乡关系 rdf:resource="#杨桂轩"/>
+                <人物:忌日 rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+                >1892-10-07</人物:忌日>
+                <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+                <人物:合作伙伴 rdf:resource="#曾国藩"/>
+                <人物:合作伙伴 rdf:resource="#李鸿章"/>
+                <人物:合作伙伴 rdf:resource="#徐润"/>
+                <人物:合作伙伴>
+                  <人物:从商人士 rdf:ID="林钦">
+                    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                    >唐廷枢同乡</rdfs:comment>
+                    <人物:合作伙伴 rdf:resource="#唐廷枢"/>
+                  </人物:从商人士>
+                </人物:合作伙伴>
+                <人物:国籍 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                ></人物:国籍>
+                <人物:字 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >建时</人物:字>
+                <人物:弟弟是 rdf:resource="#唐廷植"/>
+                <人物:族弟是>
+                  <人物:唐氏家族 rdf:ID="唐瑞芝">
+                    <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                    >男</人物:性别>
+                    <人物:族兄是 rdf:resource="#唐廷枢"/>
+                    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                    >唐廷枢族弟</rdfs:comment>
+                  </人物:唐氏家族>
+                </人物:族弟是>
+                <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1832"/>
+                <人物:别名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >唐杰</人物:别名>
+                <人物:号 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >景星</人物:号>
+                <人物:同乡关系 rdf:resource="#唐隆茂"/>
+                <人物:同乡关系 rdf:resource="#如阿春"/>
+                <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#唐家村"/>
+              </人物:唐氏家族>
+            </人物:同乡关系>
+            <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >唐廷枢同乡</rdfs:comment>
+          </人物:从商人士>
+        </人物:同乡关系>
+        <人物:朋友关系 rdf:resource="#唐廷枢"/>
+      </人物:郑氏家族>
+    </人物:儿子是>
+    <人物:别名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >郑秀峰</人物:别名>
+  </人物:郑氏家族>
+  <人物:华侨华人 rdf:ID="刘震球"/>
+  <人物:乡贤俊彦 rdf:ID="何述中"/>
+  <人物:香山居民 rdf:ID="卢裕富"/>
+  <人物:航空翘楚 rdf:ID="黄炳登">
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#斗门县"/>
+    <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1938"/>
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1909"/>
+  </人物:航空翘楚>
+  <人物:乡贤俊彦 rdf:ID="卢兆龙"/>
+  <人物:文化名家 rdf:ID="黄冷观"/>
+  <人物:华侨华人 rdf:ID="张炳堂">
+    <人物:儿子是>
+      <人物:航空翘楚 rdf:ID="张有名">
+        <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#斗门县"/>
+        <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1985"/>
+        <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1910"/>
+      </人物:航空翘楚>
+    </人物:儿子是>
+  </人物:华侨华人>
+  <人物:航空翘楚 rdf:ID="郑厚邦">
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+    <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1980"/>
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1908"/>
+  </人物:航空翘楚>
+  <人物:航空翘楚 rdf:ID="刘保生">
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+  </人物:航空翘楚>
+  <人物:军政要人 rdf:ID="张庆云">
+    <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >男</人物:性别>
+  </人物:军政要人>
+  <人物:华侨华人 rdf:ID="谢宝山"/>
+  <人物:文化名家 rdf:ID="卢燕"/>
+  <人物:华侨华人 rdf:ID="何德权"/>
+  <人物:华侨华人 rdf:ID="何清"/>
+  <人物:徐氏家族 rdf:ID="徐渭南">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >许润堂兄</rdfs:comment>
+  </人物:徐氏家族>
+  <人物:航空翘楚 rdf:ID="刘薇馨">
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+    <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1936"/>
+    <人物:别名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >兰省</人物:别名>
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1907"/>
+  </人物:航空翘楚>
+  <人物:乡贤俊彦 rdf:ID="陈书"/>
+  <人物:乡贤俊彦 rdf:ID="刘肃芬"/>
+  <人物:文化名家 rdf:ID="江有生"/>
+  <人物:英烈志士 rdf:ID="何洪"/>
+  <人物:华侨华人 rdf:ID="欧阳克航">
+    <人物:女儿是>
+      <人物:航空翘楚 rdf:ID="欧阳瑛">
+        <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1932"/>
+        <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#大岭村"/>
+        <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+        <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1896"/>
+      </人物:航空翘楚>
+    </人物:女儿是>
+  </人物:华侨华人>
+  <人物:文化名家 rdf:ID="郑淡然"/>
+  <人物:文化名家 rdf:ID="黄宽"/>
+  <人物:乡贤俊彦 rdf:ID="伍彭年"/>
+  <人物:航空翘楚 rdf:ID="卢维清">
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#外沙村"/>
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+  </人物:航空翘楚>
+  <人物:乡贤俊彦 rdf:ID="何曰愈"/>
+  <人物:文化名家 rdf:ID="刘永福"/>
+  <人物:文化名家 rdf:ID="龙万积"/>
+  <人物:军政要人 rdf:ID="林伟民">
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1887"/>
+    <人物:别名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >林兴</人物:别名>
+  </人物:军政要人>
+  <人物:乡贤俊彦 rdf:ID="何述铉"/>
+  <人物:华侨华人 rdf:ID="薛吉圃">
+    <人物:儿子是>
+      <人物:航空翘楚 rdf:ID="薛揖周">
+        <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#南溪村"/>
+        <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+        <人物:同乡关系>
+          <人物:航空翘楚 rdf:ID="陈兆新">
+            <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1909"/>
+            <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1940"/>
+            <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#南溪村"/>
+            <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+            <人物:同乡关系 rdf:resource="#薛揖周"/>
+          </人物:航空翘楚>
+        </人物:同乡关系>
+        <人物:别名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >薛旋</人物:别名>
+        <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1910"/>
+        <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1942"/>
+      </人物:航空翘楚>
+    </人物:儿子是>
+  </人物:华侨华人>
+  <人物:华侨华人 rdf:ID="陈芳"/>
+  <人物:航空翘楚 rdf:ID="吴势"/>
+  <人物:其他相关人物 rdf:ID="邓小平">
+    <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >男</人物:性别>
+  </人物:其他相关人物>
+  <人物:航空翘楚 rdf:ID="许声芳"/>
+  <人物:航空翘楚 rdf:ID="李宝诚">
+    <人物:别名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >李润昌</人物:别名>
+    <人物:生日 rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+    >2017-03-18</人物:生日>
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+  </人物:航空翘楚>
+  <人物:文化名家 rdf:ID="郑贯一"/>
+  <人物:乡贤俊彦 rdf:ID="杨锡震"/>
+  <人物:华侨华人 rdf:ID="郑仲"/>
+  <人物:乡贤俊彦 rdf:ID="袁三接"/>
+  <人物:乡贤俊彦 rdf:ID="卢殿标"/>
+  <人物:华侨华人 rdf:ID="吴福全"/>
+  <人物:乡贤俊彦 rdf:ID="鲍俊"/>
+  <人物:乡贤俊彦 rdf:ID="区侯刚"/>
+  <人物:航空翘楚 rdf:ID="曹醒仁">
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香洲区"/>
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#南溪村"/>
+    <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1983"/>
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1908"/>
+  </人物:航空翘楚>
+  <人物:航空翘楚 rdf:ID="李允文"/>
+  <人物:留学人士 rdf:ID="容尚谦">
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#南屏村"/>
+    <人物:族兄是 rdf:resource="#容闳"/>
+    <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1954"/>
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1863"/>
+    <人物:字 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    ></人物:字>
+    <人物:号 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    ></人物:号>
+  </人物:留学人士>
+  <人物:乡贤俊彦 rdf:ID="李遐龄"/>
+  <人物:从商人士 rdf:ID="郭乐">
+    <人物:弟弟是>
+      <人物:从商人士 rdf:ID="郭葵"/>
+    </人物:弟弟是>
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1874"/>
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+    <人物:别名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >官乐</人物:别名>
+    <人物:弟弟是>
+      <人物:从商人士 rdf:ID="郭浩"/>
+    </人物:弟弟是>
+    <人物:弟弟是>
+      <人物:从商人士 rdf:ID="郭顺"/>
+    </人物:弟弟是>
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#竹秀园村"/>
+    <人物:弟弟是>
+      <人物:从商人士 rdf:ID="郭泉">
+        <人物:儿子是>
+          <人物:从商人士 rdf:ID="郭琳爽">
+            <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1974"/>
+            <人物:别名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >启棠</人物:别名>
+            <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+            <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1896"/>
+          </人物:从商人士>
+        </人物:儿子是>
+        <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1875"/>
+        <人物:字 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >凤辉</人物:字>
+        <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1966"/>
+      </人物:从商人士>
+    </人物:弟弟是>
+    <人物:号 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >景崇</人物:号>
+    <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1956"/>
+    <人物:字 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >鸾辉</人物:字>
+  </人物:从商人士>
+  <人物:英烈志士 rdf:ID="欧阳可祥"/>
+  <人物:从商人士 rdf:ID="容灿波">
+    <人物:儿子是>
+      <人物:航空翘楚 rdf:ID="容章浩">
+        <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+        <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#南屏村"/>
+      </人物:航空翘楚>
+    </人物:儿子是>
+  </人物:从商人士>
+  <人物:从商人士 rdf:ID="郭棣活">
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#悉尼"/>
+    <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1986"/>
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1904"/>
+  </人物:从商人士>
+  <人物:乡贤俊彦 rdf:ID="何吾驺"/>
+  <人物:乡贤俊彦 rdf:ID="唐宝锷"/>
+  <人物:从商人士 rdf:ID="黄汇"/>
+  <人物:文化名家 rdf:ID="萧友梅"/>
+  <人物:华侨华人 rdf:ID="张福林"/>
+  <人物:华侨华人 rdf:ID="叶伯行"/>
+  <人物:文化名家 rdf:ID="古元"/>
+  <人物:军政要人 rdf:ID="魏邦平">
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1884"/>
+    <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >男</人物:性别>
+    <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1935"/>
+  </人物:军政要人>
+  <人物:文化名家 rdf:ID="程君海"/>
+  <人物:航空翘楚 rdf:ID="吴业雄"/>
+  <人物:文化名家 rdf:ID="李暇龄"/>
+  <人物:文化名家 rdf:ID="郑君里"/>
+  <人物:香山居民 rdf:ID="郑敏之"/>
+  <人物:华侨华人 rdf:ID="李炳详"/>
+  <人物:军政要人 rdf:ID="军容启荣">
+    <人物:父亲是>
+      <人物:文化名家 rdf:ID="容星桥">
+        <人物:族兄是 rdf:resource="#容闳"/>
+        <人物:儿子是>
+          <人物:乡贤俊彦 rdf:ID="容启兆">
+            <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >男</人物:性别>
+            <人物:父亲是 rdf:resource="#容星桥"/>
+          </人物:乡贤俊彦>
+        </人物:儿子是>
+        <人物:儿子是>
+          <人物:乡贤俊彦 rdf:ID="容启东">
+            <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >男</人物:性别>
+            <人物:父亲是 rdf:resource="#容星桥"/>
+          </人物:乡贤俊彦>
+        </人物:儿子是>
+        <人物:儿子是>
+          <人物:军政要人 rdf:ID="容启荣">
+            <人物:父亲是 rdf:resource="#容星桥"/>
+            <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >男</人物:性别>
+          </人物:军政要人>
+        </人物:儿子是>
+        <人物:儿子是>
+          <人物:军政要人 rdf:ID="容启恩">
+            <人物:父亲是 rdf:resource="#容星桥"/>
+            <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >男</人物:性别>
+          </人物:军政要人>
+        </人物:儿子是>
+        <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >男</人物:性别>
+      </人物:文化名家>
+    </人物:父亲是>
+  </人物:军政要人>
+  <人物:航空翘楚 rdf:ID="曹朝觉">
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香洲区"/>
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#南溪村"/>
+  </人物:航空翘楚>
+  <人物:乡贤俊彦 rdf:ID="黄槐森"/>
+  <人物:乡贤俊彦 rdf:ID="李孙宸"/>
+  <人物:华侨华人 rdf:ID="钟工宇"/>
+  <人物:香山居民 rdf:ID="陈公哲"/>
+  <人物:其他相关人物 rdf:ID="欧阳明">
+    <人物:儿子是>
+      <人物:其他相关人物 rdf:ID="欧阳日如">
+        <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >男</人物:性别>
+        <人物:别名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >锡月</人物:别名>
+        <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1881"/>
+        <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1948"/>
+        <人物:字 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >干秋</人物:字>
+        <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#大岭村"/>
+        <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+      </人物:其他相关人物>
+    </人物:儿子是>
+    <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >男</人物:性别>
+    <人物:弟弟是>
+      <人物:军政要人 rdf:ID="欧阳庚">
+        <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#大岭村"/>
+        <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1858"/>
+        <人物:妻子是>
+          <人物:其他相关人物 rdf:ID="陈锦梅">
+            <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >女</人物:性别>
+          </人物:其他相关人物>
+        </人物:妻子是>
+        <人物:儿子是>
+          <人物:华侨华人 rdf:ID="欧阳可强"/>
+        </人物:儿子是>
+        <人物:儿子是>
+          <人物:留学人士 rdf:ID="欧阳可宏"/>
+        </人物:儿子是>
+        <人物:字 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        ></人物:字>
+        <人物:弟弟是>
+          <人物:华侨华人 rdf:ID="欧阳祺"/>
+        </人物:弟弟是>
+        <人物:儿子是>
+          <人物:文化名家 rdf:ID="欧阳可亮"/>
+        </人物:儿子是>
+        <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+        <人物:儿子是>
+          <人物:从商人士 rdf:ID="欧阳可佑"/>
+        </人物:儿子是>
+        <人物:号 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        ></人物:号>
+        <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1941"/>
+      </人物:军政要人>
+    </人物:弟弟是>
+  </人物:其他相关人物>
+  <人物:乡贤俊彦 rdf:ID="郑韵琼"/>
+  <人物:乡贤俊彦 rdf:ID="郑基"/>
+  <人物:航空翘楚 rdf:ID="杨耀森">
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#北台村"/>
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+    <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1943"/>
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1911"/>
+  </人物:航空翘楚>
+  <人物:华侨华人 rdf:ID="杨少梅">
+    <人物:儿子是>
+      <人物:航空翘楚 rdf:ID="杨添森">
+        <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#中山县"/>
+        <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1908"/>
+        <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1933"/>
+      </人物:航空翘楚>
+    </人物:儿子是>
+  </人物:华侨华人>
+  <人物:文化名家 rdf:ID="贾小平"/>
+  <人物:文化名家 rdf:ID="方成"/>
+  <人物:乡贤俊彦 rdf:ID="蔡佑"/>
+  <人物:航空翘楚 rdf:ID="郑祖植">
+    <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1971"/>
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1913"/>
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+  </人物:航空翘楚>
+  <人物:航空翘楚 rdf:ID="刘治垣"/>
+  <人物:留学人士 rdf:ID="谭耀芳"/>
+  <人物:文化名家 rdf:ID="毛公弼"/>
+  <人物:香山居民 rdf:ID="萧悔尘"/>
+  <人物:香山居民 rdf:ID="黄以静"/>
+  <人物:乡贤俊彦 rdf:ID="李翰芬"/>
+  <人物:航空翘楚 rdf:ID="林均能">
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1910"/>
+    <人物:别名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >定英</人物:别名>
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+    <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1938"/>
+  </人物:航空翘楚>
+  <人物:思想先驱 rdf:ID="刘师复">
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+  </人物:思想先驱>
+  <人物:乡贤俊彦 rdf:ID="刘懂正"/>
+  <人物:从商人士 rdf:ID="李敏周">
+    <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1935"/>
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1881"/>
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+  </人物:从商人士>
+  <人物:香山居民 rdf:ID="程培芳">
+    <人物:字 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    ></人物:字>
+    <人物:儿子是 rdf:resource="#程璧光"/>
+  </人物:香山居民>
+  <人物:航空翘楚 rdf:ID="张惠长">
+    <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1980"/>
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1899"/>
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#中山市"/>
+  </人物:航空翘楚>
+  <人物:留学人士 rdf:ID="张康仁"/>
+  <人物:文化名家 rdf:ID="郑玛诺"/>
+  <人物:从商人士 rdf:ID="欧彬"/>
+  <人物:华侨华人 rdf:ID="彭华利"/>
+  <人物:莫氏家族 rdf:ID="莫应溎">
+    <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >男</人物:性别>
+  </人物:莫氏家族>
+  <人物:航空翘楚 rdf:ID="欧阳图强">
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1920"/>
+  </人物:航空翘楚>
+  <人物:文化名家 rdf:ID="钟荣光"/>
+  <人物:文化名家 rdf:ID="王云五"/>
+  <人物:文化名家 rdf:ID="郑锦"/>
+  <人物:留学人士 rdf:ID="容尚勤"/>
+  <人物:军政要人 rdf:ID="刘希明"/>
+  <人物:文化名家 rdf:ID="李鹿门"/>
+  <人物:华侨华人 rdf:ID="黄在仁">
+    <人物:儿子是>
+      <人物:航空翘楚 rdf:ID="黄广庆">
+        <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+        <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1982"/>
+        <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1912"/>
+      </人物:航空翘楚>
+    </人物:儿子是>
+  </人物:华侨华人>
+  <人物:华侨华人 rdf:ID="程利"/>
+  <人物:航空翘楚 rdf:ID="黄德明">
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1916"/>
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+  </人物:航空翘楚>
+  <人物:文化名家 rdf:ID="韦悫"/>
+  <人物:留学人士 rdf:ID="宋文翽"/>
+  <人物:郑氏家族 rdf:ID="郑翼之">
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#雍陌村"/>
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    ></rdfs:comment>
+  </人物:郑氏家族>
+  <人物:航空翘楚 rdf:ID="刘沛然"/>
+  <人物:军政要人 rdf:ID="陈永安">
+    <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1937"/>
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#梅溪村"/>
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1885"/>
+  </人物:军政要人>
+  <人物:香山居民 rdf:ID="林亮东"/>
+  <人物:华侨华人 rdf:ID="曹安邦"/>
+  <人物:文化名家 rdf:ID="于沫我"/>
+  <人物:华侨华人 rdf:ID="林善仪">
+    <人物:儿子是>
+      <人物:航空翘楚 rdf:ID="林毓桓">
+        <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1921"/>
+        <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1947"/>
+        <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#马山村"/>
+        <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+      </人物:航空翘楚>
+    </人物:儿子是>
+  </人物:华侨华人>
+  <人物:留学人士 rdf:ID="唐元湛"/>
+  <人物:航空翘楚 rdf:ID="刘龙光">
+    <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1937"/>
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1914"/>
+  </人物:航空翘楚>
+  <人物:文化名家 rdf:ID="黄培芳"/>
+  <人物:文化名家 rdf:ID="方人定"/>
+  <人物:香山居民 rdf:ID="冯强标"/>
+  <人物:华侨华人 rdf:ID="魏凯臣">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >魏世英祖父</rdfs:comment>
+  </人物:华侨华人>
+  <人物:文化名家 rdf:ID="龙剑笙"/>
+  <人物:徐氏家族 rdf:ID="杨梅南">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >徐润表弟</rdfs:comment>
+  </人物:徐氏家族>
+  <人物:英烈志士 rdf:ID="何华安"/>
+  <人物:乡贤俊彦 rdf:ID="汪文炳"/>
+  <人物:华侨华人 rdf:ID="杨著昆">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >杨添森祖父</rdfs:comment>
+  </人物:华侨华人>
+  <人物:航空翘楚 rdf:ID="刘炯光">
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#龙瑞村"/>
+    <人物:字 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    ></人物:字>
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1907"/>
+  </人物:航空翘楚>
+  <人物:香山居民 rdf:ID="江嘉良"/>
+  <人物:华侨华人 rdf:ID="陈席儒"/>
+  <人物:乡贤俊彦 rdf:ID="麦佑"/>
+  <人物:航空翘楚 rdf:ID="蔡志昌">
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+  </人物:航空翘楚>
+  <人物:乡贤俊彦 rdf:ID="陈兰芝"/>
+  <人物:航空翘楚 rdf:ID="蔡绍源"/>
+  <人物:航空翘楚 rdf:ID="刘永廉">
+    <人物:儿子是>
+      <人物:航空翘楚 rdf:ID="刘啸天">
+        <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+        <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#龙瑞村"/>
+        <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1940"/>
+        <人物:别名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >斗善</人物:别名>
+        <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1905"/>
+      </人物:航空翘楚>
+    </人物:儿子是>
+    <人物:别名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    ></人物:别名>
+  </人物:航空翘楚>
+  <人物:留学人士 rdf:ID="郑廷襄"/>
+  <人物:华侨华人 rdf:ID="程瑞麟"/>
+  <人物:其他相关人物 rdf:ID="司徒壁">
+    <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >男</人物:性别>
+    <人物:丈夫是 rdf:resource="#张有名"/>
+  </人物:其他相关人物>
+  <人物:华侨华人 rdf:ID="杨大钊"/>
+  <人物:航空翘楚 rdf:ID="郑祖名">
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1925"/>
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+  </人物:航空翘楚>
+  <人物:文化名家 rdf:ID="伍权"/>
+  <人物:乡贤俊彦 rdf:ID="李修凝"/>
+  <人物:文化名家 rdf:ID="林介如"/>
+  <人物:华侨华人 rdf:ID="林可风"/>
+  <人物:华侨华人 rdf:ID="郭健章">
+    <人物:儿子是>
+      <人物:航空翘楚 rdf:ID="郭良弼">
+        <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+        <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1962"/>
+        <人物:号 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        ></人物:号>
+        <人物:别名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        ></人物:别名>
+        <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1910"/>
+      </人物:航空翘楚>
+    </人物:儿子是>
+  </人物:华侨华人>
+  <人物:航空翘楚 rdf:ID="黄广英"/>
+  <人物:华侨华人 rdf:ID="黄咏商"/>
+  <人物:从商人士 rdf:ID="李煜堂">
+    <人物:字 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >文奎</人物:字>
+    <人物:号 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >煜堂</人物:号>
+    <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1936"/>
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1851"/>
+  </人物:从商人士>
+  <人物:华侨华人 rdf:ID="黄开基">
+    <人物:别名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    ></人物:别名>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >空军飞行员黄炳登的祖父</rdfs:comment>
+  </人物:华侨华人>
+  <人物:文化名家 rdf:ID="黄苗子"/>
+  <人物:乡贤俊彦 rdf:ID="麦晖"/>
+  <人物:文化名家 rdf:ID="杨嘉仁"/>
+  <人物:留学人士 rdf:ID="黄耀昌"/>
+  <人物:文化名家 rdf:ID="吴桂显"/>
+  <人物:乡贤俊彦 rdf:ID="蒲伯龄"/>
+  <人物:从商人士 rdf:ID="欧昭"/>
+  <人物:乡贤俊彦 rdf:ID="马南宝"/>
+  <人物:华侨华人 rdf:ID="姚观顺"/>
+  <人物:文化名家 rdf:ID="吴云纵"/>
+  <人物:从商人士 rdf:ID="马永灿"/>
+  <人物:乡贤俊彦 rdf:ID="何璟"/>
+  <人物:文化名家 rdf:ID="林冠明"/>
+  <人物:文化名家 rdf:ID="肖淑娴"/>
+  <人物:从商人士 rdf:ID="严迪光"/>
+  <人物:留学人士 rdf:ID="邓桂廷"/>
+  <人物:乡贤俊彦 rdf:ID="曾望颜"/>
+  <人物:思想先驱 rdf:ID="杨匏安">
+    <人物:别名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >杨麟焘</人物:别名>
+    <人物:别名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >杨锦焘</人物:别名>
+    <人物:儿子是>
+      <人物:其他相关人物 rdf:ID="杨明">
+        <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >男</人物:性别>
+      </人物:其他相关人物>
+    </人物:儿子是>
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#南屏村"/>
+    <人物:妻子是>
+      <人物:其他相关人物 rdf:ID="吴佩琪">
+        <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >女</人物:性别>
+      </人物:其他相关人物>
+    </人物:妻子是>
+    <人物:化名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >匏庵</人物:化名>
+    <人物:化名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    ></人物:化名>
+  </人物:思想先驱>
+  <人物:留学人士 rdf:ID="陈绍昌"/>
+  <人物:文化名家 rdf:ID="韦卓民"/>
+  <人物:华侨华人 rdf:ID="孙眉"/>
+  <人物:乡贤俊彦 rdf:ID="黄经"/>
+  <人物:华侨华人 rdf:ID="杨光善">
+    <人物:儿子是 rdf:resource="#杨添森"/>
+  </人物:华侨华人>
+  <人物:航空翘楚 rdf:ID="张君正">
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1909"/>
+    <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1944"/>
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+  </人物:航空翘楚>
+  <人物:华侨华人 rdf:ID="程廷焯"/>
+  <人物:乡贤俊彦 rdf:ID="李卓揆"/>
+  <人物:航空翘楚 rdf:ID="谭达光">
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1918"/>
+  </人物:航空翘楚>
+  <人物:乡贤俊彦 rdf:ID="黄绍昌"/>
+  <人物:留学人士 rdf:ID="李恩富"/>
+  <人物:军政要人 rdf:ID="杨云骧">
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#南屏村"/>
+    <人物:儿子是>
+      <人物:军政要人 rdf:ID="杨镇海">
+        <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1923"/>
+        <人物:字 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >祖泰</人物:字>
+        <人物:号 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >表东</人物:号>
+        <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1828"/>
+        <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#南屏村"/>
+      </人物:军政要人>
+    </人物:儿子是>
+    <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1872"/>
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1801"/>
+    <人物:号 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >楚田</人物:号>
+  </人物:军政要人>
+  <人物:乡贤俊彦 rdf:ID="董百庆"/>
+  <人物:文化名家 rdf:ID="胡蝶影"/>
+  <人物:华侨华人 rdf:ID="郭标"/>
+  <人物:文化名家 rdf:ID="欧初"/>
+  <人物:华侨华人 rdf:ID="雷学溢">
+    <人物:儿子是>
+      <人物:华侨华人 rdf:ID="雷玉堂"/>
+    </人物:儿子是>
+    <人物:儿子是>
+      <人物:航空翘楚 rdf:ID="雷昆照">
+        <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1920"/>
+        <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1944"/>
+        <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#温哥华"/>
+        <人物:外文名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >QuanLouie</人物:外文名>
+      </人物:航空翘楚>
+    </人物:儿子是>
+  </人物:华侨华人>
+  <人物:航空翘楚 rdf:ID="刘烔光"/>
+  <人物:文化名家 rdf:ID="罗卓瑶"/>
+  <人物:乡贤俊彦 rdf:ID="黄占元"/>
+  <人物:唐氏家族 rdf:ID="唐廷庚">
+    <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >男</人物:性别>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >唐廷枢胞弟</rdfs:comment>
+  </人物:唐氏家族>
+  <人物:文化名家 rdf:ID="郑志声"/>
+  <人物:文化名家 rdf:ID="郑愚"/>
+  <人物:从商人士 rdf:ID="张肇达"/>
+  <人物:文化名家 rdf:ID="郑水心"/>
+  <人物:留学人士 rdf:ID="刘家照"/>
+  <人物:留学人士 rdf:ID="刘玉麟"/>
+  <人物:军政要人 rdf:ID="刘思复"/>
+  <人物:留学人士 rdf:ID="卓仁志"/>
+  <人物:留学人士 rdf:ID="蔡锦章"/>
+  <人物:航空翘楚 rdf:ID="陈治平"/>
+  <人物:英烈志士 rdf:ID="沈志亮">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >反抗外侮的民族义士</rdfs:comment>
+  </人物:英烈志士>
+  <人物:乡贤俊彦 rdf:ID="何迁标"/>
+  <人物:留学人士 rdf:ID="钟文耀"/>
+  <人物:文化名家 rdf:ID="杨荫芳"/>
+  <人物:乡贤俊彦 rdf:ID="区大纬"/>
+  <人物:华侨华人 rdf:ID="鲍少游"/>
+  <人物:文化名家 rdf:ID="麦放明"/>
+  <人物:华侨华人 rdf:ID="程庆利"/>
+  <人物:航空翘楚 rdf:ID="杨官宇">
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1901"/>
+    <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1970"/>
+  </人物:航空翘楚>
+  <人物:乡贤俊彦 rdf:ID="蔡显原"/>
+  <人物:留学人士 rdf:ID="李桂攀"/>
+  <人物:其他相关人物 rdf:ID="陈兆翱">
+    <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1899"/>
+    <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >男</人物:性别>
+    <人物:老师是 rdf:resource="#容闳"/>
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1854"/>
+  </人物:其他相关人物>
+  <人物:留学人士 rdf:ID="陆水泉"/>
+  <人物:乡贤俊彦 rdf:ID="何乃斌"/>
+  <人物:从商人士 rdf:ID="欧亮"/>
+  <人物:航空翘楚 rdf:ID="陈万荣"/>
+  <人物:乡贤俊彦 rdf:ID="方芬"/>
+  <人物:乡贤俊彦 rdf:ID="马烔"/>
+  <人物:徐氏家族 rdf:ID="徐钰亭">
+    <人物:别名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >徐昭衍</人物:别名>
+  </人物:徐氏家族>
+  <人物:航空翘楚 rdf:ID="林时汉">
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#斗门县"/>
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1904"/>
+  </人物:航空翘楚>
+  <人物:思想先驱 rdf:ID="郑彼岸">
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#中山市"/>
+  </人物:思想先驱>
+  <人物:香山居民 rdf:ID="陈连娇"/>
+  <人物:从商人士 rdf:ID="蔡昌">
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+    <人物:字 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >均泰</人物:字>
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1877"/>
+    <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1953"/>
+  </人物:从商人士>
+  <人物:文化名家 rdf:ID="黄绍芬"/>
+  <人物:航空翘楚 rdf:ID="杨建勋"/>
+  <人物:文化名家 rdf:ID="裕容龄"/>
+  <人物:华侨华人 rdf:ID="陈立矩"/>
+  <人物:军政要人 rdf:ID="苏墨斋">
+    <人物:弟弟是>
+      <人物:文化名家 rdf:ID="苏曼殊"/>
+    </人物:弟弟是>
+    <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >男</人物:性别>
+  </人物:军政要人>
+  <人物:文化名家 rdf:ID="郑景康"/>
+  <人物:乡贤俊彦 rdf:ID="杨遇春"/>
+  <人物:军政要人 rdf:ID="苏兆征">
+    <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1929"/>
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1885"/>
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+  </人物:军政要人>
+  <人物:英烈志士 rdf:ID="陆皓东">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >为共和革命捐躯的第一人</rdfs:comment>
+  </人物:英烈志士>
+  <人物:英烈志士 rdf:ID="严流"/>
+  <人物:英烈志士 rdf:ID="余海"/>
+  <人物:军政要人 rdf:ID="刘丽川">
+    <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1855"/>
+    <人物:别名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    ></人物:别名>
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1820"/>
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#奚角村"/>
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+  </人物:军政要人>
+  <人物:文化名家 rdf:ID="刘逸生"/>
+  <人物:英烈志士 rdf:ID="余平"/>
+  <人物:乡贤俊彦 rdf:ID="韦易"/>
+  <人物:文化名家 rdf:ID="梁白波"/>
+  <人物:航空翘楚 rdf:ID="卢维浦"/>
+  <人物:军政要人 rdf:ID="郑藻如">
+    <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1894"/>
+    <人物:字 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >志翔</人物:字>
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#濠头村"/>
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+    <人物:别名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >玉轩</人物:别名>
+    <人物:号 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >豫轩</人物:号>
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1824"/>
+  </人物:军政要人>
+  <人物:文化名家 rdf:ID="陈雅莉"/>
+  <人物:留学人士 rdf:ID="程大器"/>
+  <人物:乡贤俊彦 rdf:ID="何士详"/>
+  <人物:乡贤俊彦 rdf:ID="杨仲玉"/>
+  <人物:华侨华人 rdf:ID="周崧"/>
+  <人物:从商人士 rdf:ID="鲍鹏">
+    <人物:号 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >望山</人物:号>
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1792"/>
+    <人物:别名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >鲍亚聪</人物:别名>
+  </人物:从商人士>
+  <人物:航空翘楚 rdf:ID="蔡铁钳"/>
+  <人物:留学人士 rdf:ID="张有恭"/>
+  <人物:航空翘楚 rdf:ID="黄璇">
+    <人物:别名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    ></人物:别名>
+  </人物:航空翘楚>
+  <人物:军政要人 rdf:ID="吴铁城">
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#江西省"/>
+    <人物:字 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    ></人物:字>
+    <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1953"/>
+    <人物:儿子是>
+      <人物:乡贤俊彦 rdf:ID="吴幼良"/>
+    </人物:儿子是>
+    <人物:儿子是>
+      <人物:从商人士 rdf:ID="吴幼林"/>
+    </人物:儿子是>
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1888"/>
+  </人物:军政要人>
+  <人物:乡贤俊彦 rdf:ID="何转书"/>
+  <人物:华侨华人 rdf:ID="雷钰堂"/>
+  <人物:乡贤俊彦 rdf:ID="李萤书"/>
+  <人物:文化名家 rdf:ID="阮玲玉"/>
+  <人物:乡贤俊彦 rdf:ID="陈天觉"/>
+  <人物:其他相关人物 rdf:ID="毛泽东">
+    <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >男</人物:性别>
+  </人物:其他相关人物>
+  <人物:航空翘楚 rdf:ID="刘植炎">
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1898"/>
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#中山市"/>
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#龙瑞村"/>
+    <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1988"/>
+  </人物:航空翘楚>
+  <人物:华侨华人 rdf:ID="容嵩光"/>
+  <人物:文化名家 rdf:ID="唐涤生"/>
+  <人物:航空翘楚 rdf:ID="容广成">
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1912"/>
+    <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1939"/>
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#南屏村"/>
+    <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >男</人物:性别>
+  </人物:航空翘楚>
+  <人物:航空翘楚 rdf:ID="欧阳焕文">
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1923"/>
+  </人物:航空翘楚>
+  <人物:徐氏家族 rdf:ID="徐关大">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >许润堂兄</rdfs:comment>
+  </人物:徐氏家族>
+  <人物:华侨华人 rdf:ID="马玉山"/>
+  <人物:华侨华人 rdf:ID="杨广森">
+    <人物:儿子是>
+      <人物:航空翘楚 rdf:ID="杨华焯">
+        <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1909"/>
+        <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#北台村"/>
+        <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+      </人物:航空翘楚>
+    </人物:儿子是>
+  </人物:华侨华人>
+  <人物:乡贤俊彦 rdf:ID="李平西"/>
+  <人物:从商人士 rdf:ID="曾寄圃">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >徐润师傅</rdfs:comment>
+  </人物:从商人士>
+  <人物:航空翘楚 rdf:ID="李泽平">
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+    <人物:别名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >李照</人物:别名>
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1908"/>
+    <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1947"/>
+  </人物:航空翘楚>
+  <人物:文化名家 rdf:ID="张惠冲"/>
+  <人物:英烈志士 rdf:ID="余荣华"/>
+  <人物:留学人士 rdf:ID="梁如洗"/>
+  <人物:乡贤俊彦 rdf:ID="郑应元"/>
+  <人物:文化名家 rdf:ID="伍廷芳"/>
+  <人物:航空翘楚 rdf:ID="容兆明">
+    <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1937"/>
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#龙坛村"/>
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#斗门县"/>
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1911"/>
+  </人物:航空翘楚>
+  <人物:乡贤俊彦 rdf:ID="陆朝安"/>
+  <人物:乡贤俊彦 rdf:ID="邓公度"/>
+  <人物:乡贤俊彦 rdf:ID="伍瑞隆"/>
+  <人物:文化名家 rdf:ID="张其"/>
+  <人物:留学人士 rdf:ID="盛文扬"/>
+  <人物:文化名家 rdf:ID="刘浣芳"/>
+  <人物:乡贤俊彦 rdf:ID="何述瓒"/>
+  <人物:乡贤俊彦 rdf:ID="郑廷棣"/>
+  <人物:乡贤俊彦 rdf:ID="赵梅南"/>
+  <人物:从商人士 rdf:ID="郑伯昭"/>
+  <人物:文化名家 rdf:ID="杨仲子"/>
+  <人物:乡贤俊彦 rdf:ID="黄佐"/>
+  <人物:香山居民 rdf:ID="刘立夫">
+    <人物:儿子是>
+      <人物:航空翘楚 rdf:ID="刘敬光">
+        <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#小榄村"/>
+        <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1910"/>
+      </人物:航空翘楚>
+    </人物:儿子是>
+  </人物:香山居民>
+  <人物:乡贤俊彦 rdf:ID="蔡晋源"/>
+  <人物:航空翘楚 rdf:ID="黄华杰">
+    <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1941"/>
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1912"/>
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#斗门县"/>
+  </人物:航空翘楚>
+  <人物:军政要人 rdf:ID="林锵云"/>
+  <人物:军政要人 rdf:ID="李凡夫">
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1906"/>
+    <人物:别名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >郑锡祥</人物:别名>
+    <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1990"/>
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#濠头村"/>
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#中山市"/>
+  </人物:军政要人>
+  <人物:乡贤俊彦 rdf:ID="孔继贞"/>
+  <人物:其他相关人物 rdf:ID="张玉琼">
+    <人物:儿子是>
+      <人物:航空翘楚 rdf:ID="刘锦涛">
+        <人物:别名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        ></人物:别名>
+        <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1903"/>
+        <人物:生日 rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+        >1903-08-12</人物:生日>
+      </人物:航空翘楚>
+    </人物:儿子是>
+    <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >女</人物:性别>
+  </人物:其他相关人物>
+  <人物:乡贤俊彦 rdf:ID="袁杲"/>
+  <人物:乡贤俊彦 rdf:ID="梁杞"/>
+  <人物:乡贤俊彦 rdf:ID="何作猷"/>
+  <人物:留学人士 rdf:ID="唐致尧"/>
+  <人物:航空翘楚 rdf:ID="萧秉翰">
+    <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1963"/>
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1913"/>
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#上栅村"/>
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+  </人物:航空翘楚>
+  <人物:郑氏家族 rdf:ID="郑济东">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >郑观应的族哥</rdfs:comment>
+  </人物:郑氏家族>
+  <人物:乡贤俊彦 rdf:ID="刘其昌"/>
+  <人物:乡贤俊彦 rdf:ID="李龙翔"/>
+  <人物:其他相关人物 rdf:ID="林丽容">
+    <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >女</人物:性别>
+    <人物:女儿是>
+      <人物:航空翘楚 rdf:ID="朱慕飞">
+        <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1932"/>
+        <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1897"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >中国第一个女飞行人员</rdfs:comment>
+      </人物:航空翘楚>
+    </人物:女儿是>
+  </人物:其他相关人物>
+  <人物:航空翘楚 rdf:ID="容章炳">
+    <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1976"/>
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#南屏村"/>
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1907"/>
+  </人物:航空翘楚>
+  <人物:乡贤俊彦 rdf:ID="陈子清"/>
+  <人物:航空翘楚 rdf:ID="潘福林"/>
+  <人物:华侨华人 rdf:ID="蓝卓峰"/>
+  <人物:留学人士 rdf:ID="梁金荣"/>
+  <人物:航空翘楚 rdf:ID="薛炳坤">
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1916"/>
+    <人物:别名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >康裕</人物:别名>
+    <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1960"/>
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#南溪村"/>
+  </人物:航空翘楚>
+  <人物:乡贤俊彦 rdf:ID="周尚文"/>
+  <人物:留学人士 rdf:ID="史锦镛"/>
+  <人物:乡贤俊彦 rdf:ID="麦炽昌"/>
+  <人物:军政要人 rdf:ID="陈君葆">
+    <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >男</人物:性别>
+    <人物:字 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >厚基</人物:字>
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#平岚村"/>
+  </人物:军政要人>
+  <人物:留学人士 rdf:ID="郑守仪"/>
+  <人物:航空翘楚 rdf:ID="邓杰伟"/>
+  <人物:航空翘楚 rdf:ID="梁守一">
+    <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1930"/>
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1893"/>
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香洲区"/>
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#唐家湾村"/>
+  </人物:航空翘楚>
+  <人物:从商人士 rdf:ID="唐简泉"/>
+  <人物:文化名家 rdf:ID="吕文成"/>
+  <人物:留学人士 rdf:ID="唐荣俊"/>
+  <人物:其他相关人物 rdf:ID="吴东耀">
+    <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >男</人物:性别>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >吴东华弟弟</rdfs:comment>
+  </人物:其他相关人物>
+  <人物:航空翘楚 rdf:ID="呈势">
+    <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1948"/>
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1900"/>
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+  </人物:航空翘楚>
+  <人物:军政要人 rdf:ID="蔡廷干">
+    <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1935"/>
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1861"/>
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#上栅村"/>
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+    <人物:外文名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    ></人物:外文名>
+  </人物:军政要人>
+  <人物:唐氏家族 rdf:ID="唐纪常">
+    <人物:叔奶爷是 rdf:resource="#唐廷植"/>
+    <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >男</人物:性别>
+  </人物:唐氏家族>
+  <人物:文化名家 rdf:ID="卢施福"/>
+  <人物:航空翘楚 rdf:ID="郑乃汉">
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1912"/>
+    <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1938"/>
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+  </人物:航空翘楚>
+  <人物:军政要人 rdf:ID="孙乾"/>
+  <人物:文化名家 rdf:ID="程度纯"/>
+  <人物:徐氏家族 rdf:ID="金生">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >徐润长孙</rdfs:comment>
+  </人物:徐氏家族>
+  <人物:留学人士 rdf:ID="徐振鹏"/>
+  <人物:莫氏家族 rdf:ID="莫应基">
+    <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >男</人物:性别>
+  </人物:莫氏家族>
+  <人物:航空翘楚 rdf:ID="邓华高"/>
+  <人物:其他相关人物 rdf:ID="容揆">
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1861"/>
+    <人物:国籍 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    ></人物:国籍>
+    <人物:外文名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    ></人物:外文名>
+    <人物:民族 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    ></人物:民族>
+    <人物:族兄是 rdf:resource="#容闳"/>
+    <人物:生日 rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+    >1861-03-02</人物:生日>
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#新会县"/>
+    <人物:字 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    ></人物:字>
+    <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >男</人物:性别>
+  </人物:其他相关人物>
+  <人物:华侨华人 rdf:ID="麦锡详"/>
+  <人物:航空翘楚 rdf:ID="冯如">
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#恩平市"/>
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1883"/>
+    <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1912"/>
+  </人物:航空翘楚>
+  <人物:航空翘楚 rdf:ID="何守荣">
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#小榄村"/>
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1909"/>
+  </人物:航空翘楚>
+  <人物:航空翘楚 rdf:ID="朱卓文">
+    <人物:女儿是 rdf:resource="#朱慕飞"/>
+  </人物:航空翘楚>
+  <人物:英烈志士 rdf:ID="孙昌">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >为国捐躯的孙氏亲属</rdfs:comment>
+  </人物:英烈志士>
+  <人物:航空翘楚 rdf:ID="卢誉衡"/>
+  <人物:英烈志士 rdf:ID="杨殷">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >中共早期军事领导人</rdfs:comment>
+  </人物:英烈志士>
+  <人物:留学人士 rdf:ID="陈永善"/>
+  <人物:航空翘楚 rdf:ID="刘炽徽">
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1911"/>
+    <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1937"/>
+  </人物:航空翘楚>
+  <人物:华侨华人 rdf:ID="刘金良"/>
+  <人物:航空翘楚 rdf:ID="何泾渭">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    ></rdfs:comment>
+    <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1960"/>
+    <人物:别名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >何鼎</人物:别名>
+    <人物:别名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >何其猛</人物:别名>
+    <人物:别名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >何金开</人物:别名>
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1909"/>
+  </人物:航空翘楚>
+  <人物:航空翘楚 rdf:ID="欧阳英">
+    <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1920"/>
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#大岭村"/>
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1895"/>
+  </人物:航空翘楚>
+  <人物:留学人士 rdf:ID="吴其藻"/>
+  <人物:文化名家 rdf:ID="李仙根"/>
+  <人物:军政要人 rdf:ID="郑天锡">
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1884"/>
+    <人物:字 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >云程</人物:字>
+    <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1970"/>
+    <人物:号 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >茀庭</人物:号>
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#雍陌村"/>
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+  </人物:军政要人>
+  <人物:乡贤俊彦 rdf:ID="刘信烈"/>
+  <人物:华侨华人 rdf:ID="魏百川">
+    <人物:儿子是>
+      <人物:航空翘楚 rdf:ID="魏世英">
+        <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1943"/>
+        <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1907"/>
+        <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#麒麟村"/>
+        <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+        <人物:别名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        ></人物:别名>
+      </人物:航空翘楚>
+    </人物:儿子是>
+  </人物:华侨华人>
+  <人物:华侨华人 rdf:ID="容兆珍"/>
+  <人物:华侨华人 rdf:ID="陆关忠"/>
+  <人物:乡贤俊彦 rdf:ID="王天叙"/>
+  <人物:华侨华人 rdf:ID="关颖珊"/>
+  <人物:航空翘楚 rdf:ID="陈庆云">
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1897"/>
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香洲区"/>
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#南溪村"/>
+    <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1981"/>
+    <人物:字 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >天游</人物:字>
+  </人物:航空翘楚>
+  <人物:乡贤俊彦 rdf:ID="郑作邦"/>
+  <人物:乡贤俊彦 rdf:ID="李孔昭"/>
+  <人物:文化名家 rdf:ID="郑桦"/>
+  <人物:乡贤俊彦 rdf:ID="杨晋"/>
+  <人物:文化名家 rdf:ID="张慧冲"/>
+  <人物:文化名家 rdf:ID="阮章竞"/>
+  <人物:航空翘楚 rdf:ID="李家浚">
+    <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1942"/>
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#小榄村"/>
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1915"/>
+  </人物:航空翘楚>
+  <人物:华侨华人 rdf:ID="黄植廉"/>
+  <人物:英烈志士 rdf:ID="伍周进"/>
+  <人物:留学人士 rdf:ID="钟进成"/>
+  <人物:航空翘楚 rdf:ID="杨仙逸">
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1891"/>
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#夏威夷州"/>
+    <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1923"/>
+  </人物:航空翘楚>
+  <人物:乡贤俊彦 rdf:ID="何耀泰"/>
+  <人物:航空翘楚 rdf:ID="容仲伟">
+    <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1933"/>
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#南溪村"/>
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1907"/>
+    <人物:女儿是>
+      <人物:其他相关人物 rdf:ID="曰自仲">
+        <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >男</人物:性别>
+      </人物:其他相关人物>
+    </人物:女儿是>
+    <人物:女儿是>
+      <人物:其他相关人物 rdf:ID="曰自爱">
+        <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >女</人物:性别>
+      </人物:其他相关人物>
+    </人物:女儿是>
+    <人物:儿子是>
+      <人物:其他相关人物 rdf:ID="曰自强">
+        <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >男</人物:性别>
+      </人物:其他相关人物>
+    </人物:儿子是>
+  </人物:航空翘楚>
+  <人物:乡贤俊彦 rdf:ID="萧一彬"/>
+  <人物:华侨华人 rdf:ID="程金翼"/>
+  <人物:乡贤俊彦 rdf:ID="张丕基"/>
+  <人物:乡贤俊彦 rdf:ID="杨节"/>
+  <人物:文化名家 rdf:ID="莫纪彭"/>
+  <人物:航空翘楚 rdf:ID="黄公略"/>
+  <人物:航空翘楚 rdf:ID="陈神护">
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1900"/>
+    <人物:别名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >陈乌利</人物:别名>
+  </人物:航空翘楚>
+  <人物:乡贤俊彦 rdf:ID="杨绍孙"/>
+  <人物:从商人士 rdf:ID="马占明">
+    <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >男</人物:性别>
+  </人物:从商人士>
+  <人物:华侨华人 rdf:ID="唐雄"/>
+  <人物:留学人士 rdf:ID="谭耀勋"/>
+  <人物:文化名家 rdf:ID="郑道实"/>
+  <人物:香山居民 rdf:ID="黄华廉">
+    <人物:祖父是>
+      <人物:香山居民 rdf:ID="荣盛公">
+        <人物:孙子是>
+          <人物:军政要人 rdf:ID="黄居素">
+            <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1898"/>
+            <人物:妻子是>
+              <人物:其他相关人物 rdf:ID="冯端一">
+                <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >男</人物:性别>
+                <人物:丈夫是 rdf:resource="#黄居素"/>
+                <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#广州市"/>
+                <人物:字 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                ></人物:字>
+                <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1901"/>
+              </人物:其他相关人物>
+            </人物:妻子是>
+            <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1986"/>
+            <人物:祖父是 rdf:resource="#荣盛公"/>
+            <人物:父亲是 rdf:resource="#黄华廉"/>
+            <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >男</人物:性别>
+            <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#中山市"/>
+          </人物:军政要人>
+        </人物:孙子是>
+        <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#梅州市"/>
+        <人物:儿子是 rdf:resource="#黄华廉"/>
+        <人物:字 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        ></人物:字>
+      </人物:香山居民>
+    </人物:祖父是>
+    <人物:儿子是 rdf:resource="#黄居素"/>
+  </人物:香山居民>
+  <人物:军政要人 rdf:ID="叶剑英">
+    <人物:妻子是>
+      <人物:其他相关人物 rdf:ID="李刚">
+        <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >男</人物:性别>
+      </人物:其他相关人物>
+    </人物:妻子是>
+    <人物:儿子是>
+      <人物:其他相关人物 rdf:ID="叶选廉"/>
+    </人物:儿子是>
+    <人物:妻子是>
+      <人物:其他相关人物 rdf:ID="曾宪植">
+        <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >男</人物:性别>
+        <人物:妻子是>
+          <人物:其他相关人物 rdf:ID="其梁买送">
+            <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >男</人物:性别>
+            <人物:丈夫是>
+              <人物:航空翘楚 rdf:ID="黄兆均">
+                <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1984"/>
+                <人物:别名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                ></人物:别名>
+                <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+                <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1908"/>
+              </人物:航空翘楚>
+            </人物:丈夫是>
+          </人物:其他相关人物>
+        </人物:妻子是>
+        <人物:妻子是>
+          <人物:其他相关人物 rdf:ID="冯华">
+            <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >男</人物:性别>
+            <人物:丈夫是 rdf:resource="#叶剑英"/>
+          </人物:其他相关人物>
+        </人物:妻子是>
+      </人物:其他相关人物>
+    </人物:妻子是>
+    <人物:儿子是>
+      <人物:其他相关人物 rdf:ID="叶选平">
+        <人物:丈夫是 rdf:resource="#叶剑英"/>
+        <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >男</人物:性别>
+      </人物:其他相关人物>
+    </人物:儿子是>
+    <人物:女儿是>
+      <人物:其他相关人物 rdf:ID="叶向真">
+        <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >男</人物:性别>
+      </人物:其他相关人物>
+    </人物:女儿是>
+    <人物:女儿是>
+      <人物:其他相关人物 rdf:ID="叶文珊"/>
+    </人物:女儿是>
+    <人物:儿子是>
+      <人物:其他相关人物 rdf:ID="叶选宁">
+        <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >男</人物:性别>
+      </人物:其他相关人物>
+    </人物:儿子是>
+    <人物:妻子是 rdf:resource="#冯华"/>
+    <人物:女儿是>
+      <人物:其他相关人物 rdf:ID="叶楚梅">
+        <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >女</人物:性别>
+      </人物:其他相关人物>
+    </人物:女儿是>
+  </人物:军政要人>
+  <人物:军政要人 rdf:ID="陈友仁">
+    <人物:儿子是>
+      <人物:文化名家 rdf:ID="陈依范"/>
+    </人物:儿子是>
+    <人物:妻子是>
+      <人物:其他相关人物 rdf:ID="张荔英">
+        <人物:丈夫是 rdf:resource="#陈友仁"/>
+        <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >女</人物:性别>
+      </人物:其他相关人物>
+    </人物:妻子是>
+    <人物:儿子是>
+      <人物:香山居民 rdf:ID="陈丕士"/>
+    </人物:儿子是>
+    <人物:女儿是>
+      <人物:香山居民 rdf:ID="约莲达"/>
+    </人物:女儿是>
+    <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >男</人物:性别>
+    <人物:妻子是>
+      <人物:其他相关人物 rdf:ID="梁玛丽">
+        <人物:性别 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >女</人物:性别>
+        <人物:丈夫是 rdf:resource="#陈友仁"/>
+      </人物:其他相关人物>
+    </人物:妻子是>
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1875"/>
+    <人物:女儿是>
+      <人物:文化名家 rdf:ID="西尔维娅"/>
+    </人物:女儿是>
+    <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1944"/>
+  </人物:军政要人>
+  <人物:军政要人 rdf:ID="陈景华">
+    <人物:字 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >陆畦</人物:字>
+    <人物:弟弟是>
+      <人物:军政要人 rdf:ID="陈自觉">
+        <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1885"/>
+        <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1937"/>
+        <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#梅溪村"/>
+        <人物:弟弟是 rdf:resource="#陈景华"/>
+      </人物:军政要人>
+    </人物:弟弟是>
+    <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1913"/>
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#南屏村"/>
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1863"/>
+  </人物:军政要人>
+  <人物:从商人士 rdf:ID="马景煊">
+    <人物:堂兄弟关系>
+      <人物:从商人士 rdf:ID="马景华">
+        <人物:堂兄弟关系 rdf:resource="#马景煊"/>
+      </人物:从商人士>
+    </人物:堂兄弟关系>
+  </人物:从商人士>
+  <人物:航空翘楚 rdf:ID="郑梓湘">
+    <人物:同乡关系>
+      <人物:航空翘楚 rdf:ID="郑守一">
+        <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1974"/>
+        <人物:同乡关系 rdf:resource="#郑梓湘"/>
+        <人物:别名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >郑一龙</人物:别名>
+        <人物:别名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >郑华亮</人物:别名>
+        <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+        <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1900"/>
+      </人物:航空翘楚>
+    </人物:同乡关系>
+  </人物:航空翘楚>
+  <人物:航空翘楚 rdf:ID="吴东垣">
+    <人物:同乡关系>
+      <人物:航空翘楚 rdf:ID="吴东华">
+        <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1948"/>
+        <人物:字 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        ></人物:字>
+        <人物:别名 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        ></人物:别名>
+        <人物:同乡关系 rdf:resource="#吴东垣"/>
+        <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1896"/>
+      </人物:航空翘楚>
+    </人物:同乡关系>
+    <人物:死亡年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1960"/>
+    <人物:出生地 rdf:resource="http://www.owl-ontologies.com/Location.owl#香山县"/>
+    <人物:出生年份 rdf:resource="http://www.owl-ontologies.com/Time.owl#y1890"/>
+  </人物:航空翘楚>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.5, Build 663)  http://protege.stanford.edu -->
